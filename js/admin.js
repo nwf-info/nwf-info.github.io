@@ -1,3 +1,5 @@
+
+        awards = {};
 class AdminPanel {
     constructor() {
         this.token = localStorage.getItem('githubToken');
