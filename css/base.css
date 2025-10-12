@@ -76,3 +76,7 @@ a {
 #eventsCount.active {
     background-color: #ff6a0067;
 }
+
+.imageDiv img {
+    max-width: 250px;
+}

@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    const awards = {};
     console.log('Events инициализирован');
 
     // -------------------------
