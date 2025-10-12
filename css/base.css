@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navpanel {
+    display: flex;
+    padding: 8px;
+    border-radius: 0 0 4px 4px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: calc(100% - 16px);
+    position: sticky;
+    backdrop-filter: blur(20px);
+}
+
+.content {
+    margin: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.leftnav {
+    display: flex;
+    gap: 8px;
+}
+
+.rightnav {
+    display: flex;
+    gap: 8px;
+}
+
+.navbtn {
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer
+}
+
+.accountico{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 40%;
+}
+
+.leaderstable {
+}
+
+.list-table img {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #b62fe8;
+}
+
+.langbtn {
+    height: 100%;
+}
+
+#eventsCount {
+    border-radius: 50%;
+    width: 32px;
+    height: calc(32px - 5px);
+    padding: 0;
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+#eventsCount.active {
+    background-color: #ff6a0067;
+}

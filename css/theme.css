@@ -1,0 +1,49 @@
+body {
+    background: linear-gradient(135deg, #21211A, #1C2125, #1F2120);
+    color: white;
+}
+.navpanel {
+    background: linear-gradient(135deg, #1f212071);
+}
+
+.navbtn {
+    background: linear-gradient(135deg, #382f3c86, #4e53505f);
+}
+
+.list-table tbody tr.userThisIs td,
+.list-table tbody tr.userThisIs th {
+    background: #6a31ac29 !important;
+}
+
+.list-table {
+    background-color: #a3a3a310;
+}
+
+.list-table tbody tr:hover {
+    background-color: #2a2a2a1f;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.2) #2424246f;
+}
+
+button {
+    border: 0;
+}
+
+.langBtn {
+    background-color: #6b31aca3;
+}
+
+.navbtn:hover {
+    background: linear-gradient(135deg, #cad8d110, #81815a10);
+}
+
+.langBtn:hover {
+    background: linear-gradient(135deg, #914ede24, #924ede10);
+}
