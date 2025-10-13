@@ -507,4 +507,54 @@ const NwfEvents = {
 		date: '25.10.2025',
 		img: 'eurasia6.png',
 	},
-}
+	paraguayanwar: {
+		name: 'Paraguayan War',
+		date: '08.03.2025',
+		img: 'paraguayanwar.png',
+	},
+	constantinople: {
+		name: 'Fall of Constantinople',
+		date: '06.04.2025',
+		img: 'constantinople.png',
+	},
+	rome: {
+		name: 'Collapse of Rome',
+		date: '30.03.2025',
+		img: 'rome.png',
+	},
+	eurasia5: {
+		name: 'Eurasia: Part 5',
+		date: '05.04.2025',
+		img: 'eurasia5.png',
+	},
+	worldww2: {
+		name: 'World WW2',
+		date: '12.04.2025',
+		img: 'worldww2.png',
+	},
+	riseofislam: {
+		name: 'Rise of Islam',
+		date: '13.04.2025',
+		img: 'riseofislam.png',
+	},
+	springofnations: {
+		name: 'Spring of Nations',
+		date: '19.04.2025',
+		img: 'springofnations.png',
+	},
+	world1492: {
+		name: 'World 1492',
+		date: '26.04.2025',
+		img: 'world1492.png',
+	},
+	ww1standard: {
+		name: 'Standard WW1',
+		date: '10.05.2025',
+		img: 'ww1standard.png',
+	},
+	worldkaiserreich: {
+		name: 'Kaiserreich',
+		date: '11.05.2025',
+		img: 'worldkaiserreich.png',
+	}
+},
