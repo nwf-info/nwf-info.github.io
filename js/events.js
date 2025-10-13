@@ -170,7 +170,7 @@ document.addEventListener("DOMContentLoaded", () => {
             futureNwfEvents.push(e);
         }
     });
-    if (document.location.href.includes('saturn')) {
+    if (document.location.href.includes('saturn') || document.location.href.includes('Saturn')) {
         window.pastNwfEvents = pastNwfEvents;
         window.futureNwfEvents = futureNwfEvents;
         return 
@@ -178,8 +178,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventsCountElement = document.getElementById('eventsCount');
     let eventsCountLength;
-    if (typeof futureSatEvents !== 'undefined') eventsCountLength = futureNwfEvents.length - futureSatEvents.length
-    else eventsCountLength = futureNwfEvents.length;
+    /*if (typeof futureSatEvents !== 'undefined') eventsCountLength = futureNwfEvents.length - futureSatEvents.length
+    else*/ eventsCountLength = futureNwfEvents.length;
     if (eventsCountElement) {
         if (eventsCountLength > 0) { 
             if (eventsCountLength < 1) return;
