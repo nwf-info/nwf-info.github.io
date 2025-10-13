@@ -172,7 +172,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const eventsCountElement = document.getElementById('eventsCount');
-    const eventsCountLength = futureNwfEvents.length - futureSatEvents.length;
+    let eventsCountLength;
+    if (typeof futureSatEvents !== 'undefined') eventsCountLength = futureNwfEvents.length - futureSatEvents.length
+    else futureNwfEvents.length;
     if (eventsCountElement) {
         if (eventsCountLength > 0) { 
             if (eventsCountLength < 1) return;
