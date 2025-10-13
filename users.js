@@ -253,6 +253,11 @@ const events = {
         img: 'world_napoleon.png',
         //map: 'zahcary_world_v1_napoleon',
     },
+	og: {
+		name: "Warnament Multiplayer Event",
+		date: '26.10.2024',
+		img: "og.png',
+	}
 	ww2og: {
 		name: 'WW2',
 		date: '27.10.2024',
@@ -278,4 +283,64 @@ const events = {
 		date: '24.11.2024',
 		img: 'historicalww2.png'
 	},
+	historicalww1: {
+		name: 'Historical WW1 Standarn EU',
+		date: '07.12.2024',
+		img: 'historicalww1.png',
+	},
+	tigerland: {
+		name: 'Tigerland Civil War',
+		date: '08.12.2024',
+		img: 'tigerland.png',
+	},
+	talonia: {
+		name: 'Talonia World Map',
+		date: '14.12.2024',
+		img: 'talonia.png',
+	},
+	eurasia2: {
+		name: 'Eurasia: Part 2',
+		date: '21.12.2024',
+		img: 'eurasia2.png',
+	},
+	eurasia3: {
+		name: 'Eurasia: Part 3',
+		date: '04.01.2025',
+		img: 'eurasia3.png',
+	},
+	usa: {
+		name: 'United States',
+		date: '05.01.2025',
+		img: 'usa.png',
+	},
+    eurasia4: {
+		name: 'Eurasia: Part 4',
+		date: '12.01.2025',
+		img: 'eurasia4.png',
+	},
+	owb: {
+		name: 'Old World Blues',
+		date: '11.01.2025',
+		img: 'owb.png',
+	},
+	euro4modern: {
+		name: 'Euro4 Modern Day',
+		date: '19.01.2025',
+		img: 'euro4modern.png',
+	},
+	lanperna: {
+		name: 'Lanperna',
+		date: '18.01.2025',
+		img: 'lanperna.png'
+	},
+	mars: {
+		name: 'Terraformed Mars',
+		date: '25.01.2025',
+		img: 'mars.png'
+	},
+	ah: {
+		name: 'Austria Hungary',
+		date: '01.03.2025',
+		img: 'ah.png',
+	}
 }
