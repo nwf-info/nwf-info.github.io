@@ -556,5 +556,5 @@ const NwfEvents = {
 		name: 'Kaiserreich',
 		date: '11.05.2025',
 		img: 'worldkaiserreich.png',
-	}
-},
+	},
+}
