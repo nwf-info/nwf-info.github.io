@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Разбиваем на прошедшие / будущие
     const pastNwfEvents = [];
     let futureNwfEvents = [];
+    const futureNwfEvents2 = [];
     if (typeof futureSatEvents !== 'undefined') futureNwfEvents = futureSatEvents;
     eventsArray.forEach(e => {
         // Если нет даты — пропускаем события без даты
@@ -168,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
             pastNwfEvents.push(e);
         } else {
             futureNwfEvents.push(e);
+            futureNwfEvents2.push(e);
         }
     });
     if (document.location.href.includes('saturn') || document.location.href.includes('Saturn')) {
@@ -178,8 +180,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const eventsCountElement = document.getElementById('eventsCount');
     let eventsCountLength;
-    /*if (typeof futureSatEvents !== 'undefined') eventsCountLength = futureNwfEvents.length - futureSatEvents.length
-    else*/ eventsCountLength = futureNwfEvents.length;
+    if (typeof futureSatEvents !== 'undefined') eventsCountLength = futureNwfEvents2.length
+    else eventsCountLength = futureNwfEvents.length;
     if (eventsCountElement) {
         if (eventsCountLength > 0) { 
             if (eventsCountLength < 1) return;
