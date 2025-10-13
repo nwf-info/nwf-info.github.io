@@ -10,7 +10,7 @@ class Leaderboard { // Исправлено: классы должны назы�
 
     calcScoreAward(id) {
         const awardType = this.awards(id).type;
-        return types[awardType]?.score || 0; // Добавлена проверка на существование типа
+        return NwfTypes[awardType]?.score || 0; // Добавлена проверка на существование типа
     }
 
     update() {
@@ -19,7 +19,7 @@ class Leaderboard { // Исправлено: классы должны назы�
         tbody.innerHTML = '';
 
         // Convert users object to array and calculate scores
-        const usersArray = Object.entries(users).map(([key, user]) => {
+        const usersArray = Object.entries(NwfUsers).map(([key, user]) => {
             let score = 0;
             // Calculate score based on awards
             user.awards?.forEach(award => {
@@ -85,10 +85,10 @@ class Leaderboard { // Исправлено: классы должны назы�
 
             sortedAwards.forEach(awardKey => {
                 const award = this.awards(awardKey);
-                if (award && types[award.type]) { // Проверка существования типа
+                if (award && NwfTypes[award.type]) { // Проверка существования типа
                     const img = document.createElement('img');
                     img.src = `img/award/${award.type}.png`;
-                    img.title = `${types[award.type].name} ${events[award.event]?.name || ''}`; // Проверка события
+                    img.title = `${NwfTypes[award.type].name} ${events[award.event]?.name || ''}`; // Проверка события
                     img.onclick = () => this.showAward(awardKey); // Исправлен вызов метода
                     tdAwards.appendChild(img);
                 }
@@ -111,7 +111,7 @@ class Leaderboard { // Исправлено: классы должны назы�
         
         const awardInfo = this.awards(id);
         const eventInfo = events[awardInfo.event];
-        const typeInfo = types[awardInfo.type];
+        const typeInfo = NwfTypes[awardInfo.type];
         
         if (!eventInfo || !typeInfo) return; // Проверка существования данных
 

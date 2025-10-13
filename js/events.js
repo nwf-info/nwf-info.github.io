@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 1) Собираем данные о событиях из users (если пользователи есть)
     // -------------------------
     const eventsMap = {};
-    for (const userId in users) {
-        const user = users[userId];
+    for (const userId in NwfUsers) {
+        const user = NwfUsers[userId];
         (user.events || []).forEach(eventId => {
             if (!eventsMap[eventId]) {
                 eventsMap[eventId] = { players: [], awards: {} };
@@ -224,6 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.style.marginBottom = "1rem";
         card.style.color = "#fff";
         card.style.boxShadow = "0 2px 8px rgba(0,0,0,0.4)";
+        card.loading = 'lazy';
         if (time === 'future') card.style.border = "5px solid #939347"; // желтая рамка для будущих событий
         if (info.canceled) card.style.border = "5px solid #934747ff"; // желтая рамка для проваленных событий
 

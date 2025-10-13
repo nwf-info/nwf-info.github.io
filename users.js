@@ -1,4 +1,4 @@
-const users = {
+const NwfUsers = {
     "zachary": {
         "id": "zachary",
         "discord": "zachary.bachary",
@@ -236,7 +236,7 @@ const users = {
 	},
 };
 
-const types = {
+const NwfTypes = {
     "winner": {
         score: 15,
         name: "Winner of Event! "
@@ -288,7 +288,7 @@ const events = {
     eurasiaww2: {
         name: 'Eurasia WW2',
         date: '09.08.2025',
-        img: 'eurasia_ww2.png',
+        map: 'zachary_eurasia_v2_1939',
     },
     world1861: {
         name: '1861 World Map',
@@ -369,7 +369,7 @@ const events = {
 	tigerland: {
 		name: 'Tigerland Civil War',
 		date: '08.12.2024',
-		img: 'tigerland.png',
+		map: 'chuckcha_tigerland_v3_civilwar-jalhund-en',
 	},
 	talonia: {
 		name: 'Talonia World Map',
@@ -379,22 +379,22 @@ const events = {
 	eurasia2: {
 		name: 'Eurasia: Part 2',
 		date: '21.12.2024',
-		img: 'eurasia2.png',
+		map: 'zachary_eurasia_v2_ep2',
 	},
 	eurasia3: {
 		name: 'Eurasia: Part 3',
 		date: '04.01.2025',
-		img: 'eurasia3.png',
+		map: 'zachary_eurasia_v2_ep3',
 	},
 	usa: {
 		name: 'United States',
 		date: '05.01.2025',
-		img: 'usa.png',
+		map: 'zachary_usa_v1_2025',
 	},
     eurasia4: {
 		name: 'Eurasia: Part 4',
 		date: '12.01.2025',
-		img: 'eurasia4.png',
+		map: 'zachary_eurasia_v2_ep4',
 	},
 	owb: {
 		name: 'Old World Blues',
