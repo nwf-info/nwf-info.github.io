@@ -64,7 +64,7 @@ const users = {
 			"africa",
 			"middleeast",
 			"ww2og",
-		]
+		],
     },
 	"inka": {
 		"id": "inka",
@@ -82,7 +82,7 @@ const users = {
 			"ussr_great",
 			"worldww2_great",
 			"paraguayanwar_great",
-			"hre_former"
+			"hre_former",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -97,8 +97,8 @@ const users = {
 			"ussr",
 			"worldww2",
 			"paraguayanwar",
-			"hres"
-		]
+			"hre",
+		],
 	},
 	"napoleon": {
 		"id": "napoleon",
@@ -113,7 +113,7 @@ const users = {
 		    "hre",
 			"owbcaribean",
 			"crimeanwar",
-		]
+		],
 	},
 	"publicnuisance": [
 	    "id": "publicnuisance",
@@ -121,11 +121,11 @@ const users = {
 		"gamename": "Public Nuisance",
 		"awards": [
 		    "euoemodern_great",
-		]
+		],
 		"events": [
 		    "euomodern",
 			"world_napoleon",
-		]
+		],
 	],
 	"mrgoxlem": [
 	    "id": "mrgoxlem",
@@ -134,11 +134,11 @@ const users = {
 		"awards": [
 		    "feudalismac_global",
 			"eurasiaModern_former",
-		]
+		],
 		"events": [
 		    "feudalismac",
 			"eurasiaModern",
-		]
+		],
 	],
 	"useless": [
 	    "id": "useless",
@@ -146,10 +146,10 @@ const users = {
 		"gamename": "Useless",
 		"awards": [
 		    "eurasia6coalition_great",
-		]
+		],
 		"events": [
 		    "eurasia6coalition",
-		]
+		],
 	]
 };
 
