@@ -254,10 +254,10 @@ const events = {
         //map: 'zahcary_world_v1_napoleon',
     },
 	og: {
-		name: "Warnament Multiplayer Event",
+		name: 'Warnament Multiplayer Event',
 		date: '26.10.2024',
-		img: "og.png',
-	}
+		img: 'og.png',
+	},
 	ww2og: {
 		name: 'WW2',
 		date: '27.10.2024',
