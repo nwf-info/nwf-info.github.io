@@ -263,10 +263,6 @@ const events = {
 		date: '09.11.2024',
 		img: 'middleeast.png',
 	},
-	zombie: {
-		name: 'Zombie Event',
-		date: '10.11.2024',
-	},
 	eurasia1: {
 		name: 'Eurasia: Part 1',
 		date: '23.11.2024',
