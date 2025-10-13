@@ -256,7 +256,7 @@ const events = {
 	africa: {
 		name: 'Africa',
 		date: '02.11.2024',
-		img: 'africa.jpg',
+		img: 'africa.png',
 	},
 	middleeast: {
 		name: 'Middle East',
