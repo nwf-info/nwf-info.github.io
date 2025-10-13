@@ -170,11 +170,16 @@ document.addEventListener("DOMContentLoaded", () => {
             futureNwfEvents.push(e);
         }
     });
+    if (document.location.href.includes('saturn')) {
+        window.pastNwfEvents = pastNwfEvents;
+        window.futureNwfEvents = futureNwfEvents;
+        return 
+    }
 
     const eventsCountElement = document.getElementById('eventsCount');
     let eventsCountLength;
     if (typeof futureSatEvents !== 'undefined') eventsCountLength = futureNwfEvents.length - futureSatEvents.length
-    else futureNwfEvents.length;
+    else eventsCountLength = futureNwfEvents.length;
     if (eventsCountElement) {
         if (eventsCountLength > 0) { 
             if (eventsCountLength < 1) return;
@@ -206,11 +211,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const container = document.querySelector("#eventstable");
     if (!container) return;
-    if (document.location.href.includes('saturn')) {
-        window.pastNwfEvents = pastNwfEvents;
-        window.futureNwfEvents = futureNwfEvents;
-        return 
-    }
 
     container.innerHTML = ""; // очищаем контейнер
 
