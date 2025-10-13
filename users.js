@@ -259,7 +259,7 @@ const NwfTypes = {
     },
 };
 
-const events = {
+const NwfEvents = {
     worldww2: {
         name: 'WW2: World Map',
         date: '12.04.2025',

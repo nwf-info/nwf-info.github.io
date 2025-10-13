@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const awards = {};
-    console.log('Events инициализирован');
+    console.log('NwfEvents инициализирован');
 
     // -------------------------
     // 1) Собираем данные о событиях из users (если пользователи есть)
@@ -138,8 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // -------------------------
     // 3) Строим eventsArray ПО ВСЕМ событиям (не только тем, где есть игроки)
     // -------------------------
-    const eventsArray = Object.keys(events).map(eventId => {
-        const info = events[eventId] || {};
+    const eventsArray = Object.keys(NwfEvents).map(eventId => {
+        const info = NwfEvents[eventId] || {};
         const mapData = eventsMap[eventId] || { players: [], awards: {} };
         const parsedDateOnly = parseDateToDateObject(info.date); // Date или null (date-only)
         const parsedDateTime = parseDateAndTime(info); // Date или null (date+time)
