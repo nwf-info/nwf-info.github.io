@@ -52,7 +52,7 @@ class Leaderboard { // Исправлено: классы должны назы�
             // Ratio column - исправлен расчет
             const tdRatio = document.createElement('td');
             // const ratio = user.events?.length ? (user.score / user.events.length).toFixed(2) : "0.00";
-            const ratio = user.events?.length ? (user.score / user.awards.length).toFixed(2) : "0.00";
+            const ratio = user.events?.length ? (user.score / user.events.length).toFixed(2) : "0.00";
             tdRatio.textContent = ratio;
             tr.appendChild(tdRatio);
 
@@ -88,7 +88,7 @@ class Leaderboard { // Исправлено: классы должны назы�
                 if (award && NwfTypes[award.type]) { // Проверка существования типа
                     const img = document.createElement('img');
                     img.src = `img/award/${award.type}.png`;
-                    img.title = `${NwfTypes[award.type].name} ${events[award.event]?.name || ''}`; // Проверка события
+                    img.title = `${NwfTypes[award.type].name} ${NwfEvents[award.event]?.name || ''}`; // Проверка события
                     img.onclick = () => this.showAward(awardKey); // Исправлен вызов метода
                     tdAwards.appendChild(img);
                 }
@@ -110,7 +110,7 @@ class Leaderboard { // Исправлено: классы должны назы�
         if (!modalElement) return; // Проверка существования модального окна
         
         const awardInfo = this.awards(id);
-        const eventInfo = events[awardInfo.event];
+        const eventInfo = NwfEvents[awardInfo.event];
         const typeInfo = NwfTypes[awardInfo.type];
         
         if (!eventInfo || !typeInfo) return; // Проверка существования данных
