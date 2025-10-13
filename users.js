@@ -117,7 +117,7 @@ const users = {
 			"crimeanwar",
 		],
 	},
-	"publicnuisance": [
+	"publicnuisance": {
 	    "id": "publicnuisance",
 		"discord": "stewardconstruct.",
 		"discordid": "1114590604668706927",
@@ -129,8 +129,8 @@ const users = {
 		    "euomodern",
 			"world_napoleon",
 		],
-	],
-	"mrgoxlem": [
+	},
+	"mrgoxlem": {
 	    "id": "mrgoxlem",
 		"discord": "self_presev",
 		"discordid": "1223823017004634206",
@@ -143,8 +143,8 @@ const users = {
 		    "feudalismac",
 			"eurasiaModern",
 		],
-	],
-	"useless": [
+	},
+	"useless": {
 	    "id": "useless",
 		"discord": "useless_yo",
 		"discordid": "1111413830443081728",
@@ -155,7 +155,7 @@ const users = {
 		"events": [
 		    "eurasia6coalition",
 		],
-	]
+	}
 };
 
 const types = {
