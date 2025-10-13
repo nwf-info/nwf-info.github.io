@@ -421,4 +421,9 @@ const events = {
 		date: '01.03.2025',
 		img: 'ah.png',
 	},
+    eurasia6: { // i add it for exist as minimum one event from NWF in future for tests
+		name: 'Eurasia: Part 6',
+		date: '25.10.2025',
+		img: 'eurasia6.png',
+	},
 }
