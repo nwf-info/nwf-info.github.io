@@ -206,46 +206,6 @@ const users = {
 			"eurasia2",
 		],
 	},
-	"ottomanism": {
-		"id": "ottomanism",
-		"discord": "Ottomanism",
-		"discordid": "1283840564839579701",
-		"gamename": "Ottomanism",
-		"awards": [
-		    "crimeanwar_winner",
-			"eurasiaModern_super",
-			"hre_global",
-			"owbcaribean_global",
-			"world1861_global",
-			"eurasiaww2_global",
-			"worldkaiserreichp2_global",
-			"euammodern_global",
-			"feudalismac_great",
-		],
-		"events": [
-		    "crimeanwar",
-			"eurasiaModern",
-			"hre",
-			"owbcaribean",
-			"world1861",
-			"eurasiaww2",
-			"worldkaiserreichp2",
-			"euammodern",
-			"feudalismac",
-		],
-	},
-	"mooned": {
-		"id": "mooned"
-		"discord": "swonds",
-		"discordid": "1203679089182122037",
-		"gamename": "mooned",
-		"events": [
-		    "euoemodern",
-			"feudalismac",
-			"eurasiaModern",
-			"worldNapoleon",
-		],
-	},
 };
 
 const types = {
