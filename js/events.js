@@ -228,7 +228,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
             card.style.backgroundImage = `url("http://raw.githubusercontent.com/EEditor-WS/eeditor-ws-data/refs/heads/main/lib/${mapId}/${info.map}.png")`;
             }
-        } else if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
+        } else if (SatEvents[eventId]) card.style.backgroundImage = `url("https://saturn-info.github.io/img/events/${info.img}")`
+        else if (info.img) card.style.backgroundImage = `url("img/events/${info.img}")`;
         card.style.backgroundSize = "cover";
         card.style.backgroundPosition = "center";
         card.style.borderRadius = "0.4rem";
