@@ -234,6 +234,19 @@ const users = {
 			"feudalismac",
 		],
 	},
+	"mooned": {
+		"id": "mooned"
+		"discord": "swonds",
+		"discordid": "1203679089182122037",
+		"gamename": "mooned",
+	    "awards": [],
+		"events": [
+		    "euoemodern",
+			"feudalismac",
+			"eurasiaModern",
+			"worldNapoleon",
+		],
+	},
 };
 
 const types = {
