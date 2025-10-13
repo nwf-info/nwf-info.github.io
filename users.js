@@ -420,5 +420,5 @@ const events = {
 		name: 'Austria Hungary',
 		date: '01.03.2025',
 		img: 'ah.png',
-	}
+	},
 }

@@ -153,8 +153,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // Разбиваем на прошедшие / будущие
-    const pastEvents = [];
-    const futureEvents = [];
+    const pastNwfEvents = [];
+    let futureNwfEvents = [];
+    if (typeof futureSatEvents !== 'undefined') futureNwfEvents = futureSatEvents;
     eventsArray.forEach(e => {
         // Если нет даты — пропускаем события без даты
         if (!e.dateTimeObj && !e.dateObj) return;
@@ -164,19 +165,23 @@ document.addEventListener("DOMContentLoaded", () => {
         const ref = e.dateTimeObj || new Date(e.dateObj.getFullYear(), e.dateObj.getMonth(), e.dateObj.getDate(), 23, 59, 59);
 
         if (isPast(ref)) {
-            pastEvents.push(e);
+            pastNwfEvents.push(e);
         } else {
-            futureEvents.push(e);
+            futureNwfEvents.push(e);
         }
     });
 
     const eventsCountElement = document.getElementById('eventsCount');
-    const eventsCountLength = futureEvents.length;
+    const eventsCountLength = futureNwfEvents.length - futureSatEvents.length;
     if (eventsCountElement) {
         if (eventsCountLength > 0) { 
+            if (eventsCountLength < 1) return;
             eventsCountElement.classList.add('active');
             eventsCountElement.innerText = eventsCountLength;
-        } else eventsCountElement.innerText = '';
+        } else {
+            eventsCountElement.innerText = '';
+            eventsCountElement.classList.remove('active');
+        }
     }
 
     // -------------------------
@@ -194,18 +199,23 @@ document.addEventListener("DOMContentLoaded", () => {
         return 0;
     }
 
-    pastEvents.sort((a, b) => getSortKey(b) - getSortKey(a));
-    futureEvents.sort((a, b) => getSortKey(b) - getSortKey(a));
+    pastNwfEvents.sort((a, b) => getSortKey(b) - getSortKey(a));
+    futureNwfEvents.sort((a, b) => getSortKey(b) - getSortKey(a));
 
     const container = document.querySelector("#eventstable");
     if (!container) return;
+    if (document.location.href.includes('saturn')) {
+        window.pastNwfEvents = pastNwfEvents;
+        window.futureNwfEvents = futureNwfEvents;
+        return 
+    }
 
     container.innerHTML = ""; // очищаем контейнер
 
     // -------------------------
     // 5) Создание карточки события
     // -------------------------
-    function createCard({ eventId, data, info, dateObj, dateTimeObj }, time) {
+    function createCard({ eventId, data, info, dateObj, dateTimeObj, source }, time) {
         const card = document.createElement("div");
         card.className = "event-card";
         if (info.map) {
@@ -234,6 +244,13 @@ document.addEventListener("DOMContentLoaded", () => {
         // extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="downloadScenario('${info.map}')"><img src="img/icons/download.svg"></button>`
         if (info.map) extrabtnsdiv.innerHTML = extrabtnsdiv.innerHTML + `<button class="extrabtn" onclick="window.open('https://eeditor-ws.github.io/page/library/download?fullid=${info.map}')"><img src="img/icons/download.svg"></button>`
         card.appendChild(extrabtnsdiv);
+
+        const sourceOfEventDiv = document.createElement("div");
+        sourceOfEventDiv.className = 'sourceOfEventDiv';
+        if (typeof SatEvents !== 'undefined') {
+            if (SatEvents[eventId]) sourceOfEventDiv.innerHTML = `<img src='img/icons/saturn2.png' class='sourceOfEventImg' />`;
+            if (SatEvents[eventId]) card.appendChild(sourceOfEventDiv);
+        };
 
         const overlay = document.createElement("div");
         // затемняющий фон, чтобы текст читался на ярком фоне
@@ -308,12 +325,12 @@ document.addEventListener("DOMContentLoaded", () => {
     // 6) Рендер: сначала будущие, затем разделитель, затем прошедшие
     // -------------------------
     // будущее
-    if (futureEvents.length) {
-        futureEvents.forEach(e => container.appendChild(createCard(e, 'future')));
+    if (futureNwfEvents.length) {
+        futureNwfEvents.forEach(e => container.appendChild(createCard(e, 'future')));
     }
 
     // разделитель (если есть и те, и другие)
-    if (pastEvents.length && futureEvents.length) {
+    if (pastNwfEvents.length && futureNwfEvents.length) {
         const divider = document.createElement("div");
         divider.innerHTML = `
             <div class="ads" style="padding: 1rem; background: #333; color: #fff; text-align: center; border-radius: 0.5rem;">
@@ -327,15 +344,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // прошедшие
-    if (pastEvents.length) {
-        pastEvents.forEach(e => container.appendChild(createCard(e)));
+    if (pastNwfEvents.length) {
+        pastNwfEvents.forEach(e => container.appendChild(createCard(e)));
     }
+
+    window.futureNwfEvents = futureNwfEvents;
 
     // Если нужно — можно вывести лог для отладки
     // console.log('Всего событий (events):', Object.keys(events).length);
     // console.log('Событий с игроками (eventsMap):', Object.keys(eventsMap).length);
-    // console.log('Будущие:', futureEvents.map(e => ({ id: e.eventId, datetime: e.dateTimeObj ? e.dateTimeObj.toString() : (e.dateObj ? e.dateObj.toString() : null) })));
-    // console.log('Прошедшие:', pastEvents.map(e => ({ id: e.eventId, datetime: e.dateTimeObj ? e.dateTimeObj.toString() : (e.dateObj ? e.dateObj.toString() : null) })));
+    // console.log('Будущие:', futureNwfEvents.map(e => ({ id: e.eventId, datetime: e.dateTimeObj ? e.dateTimeObj.toString() : (e.dateObj ? e.dateObj.toString() : null) })));
+    // console.log('Прошедшие:', pastNwfEvents.map(e => ({ id: e.eventId, datetime: e.dateTimeObj ? e.dateTimeObj.toString() : (e.dateObj ? e.dateObj.toString() : null) })));
 });
 
 async function downloadFile(url, fileName) {
