@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Leaderboard | NWF</title>
+        <title>Admin | NWF</title>
         <meta charset="UTF-8">
-        <link rel="icon" href="img/ico.png">
+        <link rel="icon" href="img/ico2e.png">
         <script src="users.js"></script>
         <script src="js/main.js"></script>
         <script src="js/admin.js"></script>
@@ -13,45 +13,41 @@
         <link rel="stylesheet" href="css/theme.css">
         <link rel="stylesheet" href="css/list.css">
         <link rel="stylesheet" href="css/admin.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/desktop.css">
     </head>
     <body>
         <nav class="navpanel">
             <div class="leftnav">
-                <a class="navbtn" >Leaderboard</a>
-                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y">Discord</a>
+                <a class="navbtn" ><img src="img/icons/medal.svg"><p data-lang="leaderboard">Leaderboard</p></a>
+                <a class="navbtn" href="https://discord.com/invite/YVDmrzwx3y"><img src="img/icons/discord.svg"><p data-lang="Discord"></p>Discord</a>
                 <a class="navbtn" href="events.html"><img src="img/icons/calendar.svg"><p data-lang="events">Events</p><p id=eventsCount></p></a>
-                <a class="navbtn" style="background-color: #6b31aca8;">Admin Panel</a>
+                <a class="navbtn active"><img style="width: 20px; height: 20px;" src="img/award/winner-sat.png"><p data-lang="leaderboard"></p>Admin Panel</a>
             </div>
-            <div class="rightnav">
-                <div class="accountico">
-                    <img class="account-button-avatar" src="" alt="" style="display: none; width: 24px; height: 24px; border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-                    <svg class="account-button-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
+            <div class="leftnav2">
+                    <button style="grid-area: a" class="tab-btn active" data-tab="users">Users</button>
+                    <button style="grid-area: b" class="tab-btn" data-tab="types">Types</button>
+                    <button style="grid-area: c" class="tab-btn" data-tab="events">Events</button>
+                    <button style="grid-area: d" id="saveChanges" class="save-btn">Save</button>
+                    <button style="grid-area: e" id="resetChanges" class="secondary-btn">Cancel</button>
             </div>
         </nav>
         <div class="content">
             <div class="admin-container">
                 <div class="auth-section" id="authSection">
-                    <h2>Аутентификация</h2>
+                    <h2>Authentification</h2>
                     <div class="input-group">
-                        <input type="password" id="tokenInput" placeholder="Введите GitHub токен">
-                        <button id="saveToken">Сохранить токен</button>
+                        <input type="password" id="tokenInput" placeholder="Enter GitHub token">
+                        <button id="saveToken">Save token</button>
                     </div>
                 </div>
 
                 <div class="editor-section hidden" id="editorSection">
-                    <div class="section-tabs">
-                        <button class="tab-btn active" data-tab="users">Пользователи</button>
-                        <button class="tab-btn" data-tab="awards">Награды</button>
-                        <button class="tab-btn" data-tab="types">Типы наград</button>
-                    </div>
 
                     <div class="tab-content active" id="usersTab">
-                        <h3>Пользователи</h3>
-                        <button class="add-btn" id="addUser">Добавить пользователя</button>
+                        <h3>Users</h3>
+                        <button class="add-btn" id="addUser">Add user</button>
                         <div class="users-list" id="usersList"></div>
                     </div>
 
@@ -62,14 +58,26 @@
                     </div>
 
                     <div class="tab-content" id="typesTab">
-                        <h3>Типы наград</h3>
-                        <button class="add-btn" id="addType">Добавить тип</button>
+                        <h3>Types</h3>
+                        <button class="add-btn" id="addType">Add type</button>
                         <div class="types-list" id="typesList"></div>
                     </div>
 
-                    <div class="action-buttons">
-                        <button id="saveChanges" class="primary-btn">Сохранить изменения</button>
-                        <button id="resetChanges" class="secondary-btn">Отменить изменения</button>
+                    <div class="tab-content" id="eventsTab">
+                        <button class="add-btn" id="addEvent">+</button>
+                        <div class="list-container"><table class="list-table" id="events-table">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Map</th>
+                                    <th>Image</th>
+                                </tr>
+                            </thead>
+                            <tbody id="eventstablebody"></tbody>
+                        </table></div>
+                        <div class="events-list" id="eventsList"></div>
                     </div>
                 </div>
             </div>

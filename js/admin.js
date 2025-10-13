@@ -1,9 +1,7 @@
-
-        awards = {};
 class AdminPanel {
     constructor() {
         this.token = localStorage.getItem('githubToken');
-        this.originalData = { users, awards, types };
+        this.originalData = { NwfUsers, NwfEvents, NwfTypes };
         this.currentData = JSON.parse(JSON.stringify(this.originalData));
         this.setupEventListeners();
         this.checkAuth();
@@ -20,7 +18,8 @@ class AdminPanel {
 
         // Add buttons
         document.getElementById('addUser').addEventListener('click', () => this.addUser());
-        document.getElementById('addAward').addEventListener('click', () => this.addAward());
+        document.getElementById('addEvent').addEventListener('click', () => this.addEvent());
+        document.getElementById('addEvent').addEventListener('click', () => this.addEvent());
         document.getElementById('addType').addEventListener('click', () => this.addType());
 
         // Save/Reset buttons
@@ -59,83 +58,160 @@ class AdminPanel {
 
     renderAll() {
         this.renderUsers();
-        this.renderAwards();
+        this.renderEvents();
         this.renderTypes();
     }
 
     renderUsers() {
         const container = document.getElementById('usersList');
         container.innerHTML = '';
-        
-        Object.entries(this.currentData.users).forEach(([id, user]) => {
+
+        Object.entries(this.currentData.NwfUsers).forEach(([id, user]) => {
             const card = document.createElement('div');
             card.className = 'item-card';
-            
-            // Create awards checkboxes HTML
-            const awardsHTML = Object.entries(this.currentData.awards)
-                .map(([awardId, award]) => `
-                    <div class="award-checkbox">
-                        <input type="checkbox" 
-                            id="${id}_${awardId}" 
-                            value="${awardId}" 
-                            ${user.awards.includes(awardId) ? 'checked' : ''}
-                            onchange="admin.handleAwardCheckbox('${id}', '${awardId}', this.checked)"
-                        >
-                        <label for="${id}_${awardId}">
-                            <img src="img/award/${award.img}" alt="${award.name}" class="award-icon">
-                            ${award.name} (${award.type})
-                        </label>
-                    </div>
-                `).join('');
+
+            // Список наград пользователя
+            const userAwards = (user.awards || [])
+                .map(awardId => {
+                    const award = this.currentData.NwfEvents && this.currentData.NwfEvents[awardId];
+                    const parts = awardId.split('_');
+                    const imgName = parts[1];
+                    const imgSrc = `img/award/${imgName}.png`;
+                    const displayName = award?.name || awardId;
+                    const displayType = award?.type ? `(${award.type})` : '';
+                    if (!award) {
+                        // Если награда не найдена — показываем id
+                        return `
+                            <div class="award-item">
+                                <img src="${imgSrc}" alt="${displayName}" class="award-icon">
+                                <span>${displayName} ${displayType}</span>
+                                <button class="remove-award-btn" onclick="admin.removeUserAward('${id}', '${awardId}')">Del</button>
+                            </div>
+                        `;
+                    }
+                    const awardImg = award.img || `${awardId}.png`;
+                    return `
+                        <div class="award-item">
+                            <img src="img/award/${awardImg}" alt="${award.name}" class="award-icon">
+                            <span>${award.name} ${award.type ? `(${award.type})` : ''}</span>
+                            <button class="remove-award-btn" onclick="admin.removeUserAward('${id}', '${awardId}')">Del</button>
+                        </div>
+                    `;
+                }).join('');
+
+            // Dropdown для выбора события (награды)
+            const eventOptions = Object.entries(this.currentData.NwfEvents || {})
+                .map(([eventId, event]) => `<option value="${eventId}">${event.name || eventId}</option>`)
+                .join('');
+
+            // Dropdown для выбора типа награды
+            const typeOptions = Object.entries(this.currentData.NwfTypes || {})
+                .map(([typeId, type]) => `<option value="${typeId}">${type.name || typeId}</option>`)
+                .join('');
 
             card.innerHTML = `
                 <div>
                     <div class="user-info">
-                        <input type="text" value="${user.id}" placeholder="ID" onchange="admin.updateUser('${id}', 'id', this.value)">
-                        <input type="text" value="${user.discord}" placeholder="Discord" onchange="admin.updateUser('${id}', 'discord', this.value)">
-                        <input type="text" value="${user.discordid}" placeholder="Discord ID" onchange="admin.updateUser('${id}', 'discordid', this.value)">
-                        <input type="text" value="${user.gamename}" placeholder="Game Name" onchange="admin.updateUser('${id}', 'gamename', this.value)">
-                        <input type="number" value="${user.events}" placeholder="Events" onchange="admin.updateUser('${id}', 'events', this.value)">
+                        <input type="text" value="${user.id || ''}" placeholder="ID" onchange="admin.updateUser('${id}', 'id', this.value)">
+                        <input type="text" value="${user.discord || ''}" placeholder="Discord" onchange="admin.updateUser('${id}', 'discord', this.value)">
+                        <input type="text" value="${user.discordid || ''}" placeholder="Discord ID" onchange="admin.updateUser('${id}', 'discordid', this.value)">
+                        <input type="text" value="${user.gamename || ''}" placeholder="Game Name" onchange="admin.updateUser('${id}', 'gamename', this.value)">
+                        <input type="number" value="${user.events || 0}" placeholder="Events" onchange="admin.updateUser('${id}', 'events', this.value)">
                     </div>
+
                     <div class="awards-section">
-                        <h4>Награды:</h4>
-                        <div class="awards-grid">
-                            ${awardsHTML}
+                        <div class="award-add-section">
+                            <h5>Add medal:</h5>
+                            <div class="add-medal-div">
+                                <select id="eventSelect_${id}">
+                                    <option value="">Event</option>
+                                    ${eventOptions}
+                                </select>
+                                <select id="typeSelect_${id}">
+                                    <option value="">Type</option>
+                                    ${typeOptions}
+                                </select>
+                                <button onclick="admin.addUserAward('${id}')">+</button>
+                            </div>
+                        </div>
+
+                        <h4>Medals:</h4>
+                        <div class="awards-list">
+                            ${userAwards || '<div class="no-awards">No medals</div>'}
                         </div>
                     </div>
                 </div>
+
                 <div class="item-controls">
-                    <button class="delete-btn" onclick="admin.deleteUser('${id}')">Удалить</button>
+                    <button class="delete-btn" onclick="admin.deleteUser('${id}')">Del</button>
                 </div>
             `;
+
             container.appendChild(card);
         });
     }
 
-    renderAwards() {
-        const container = document.getElementById('awardsList');
+    // Примеры реализаций, добавь в свой объект admin (или где у тебя методы)
+    addUserAward(userId) {
+        const eventSelect = document.getElementById(`eventSelect_${userId}`);
+        const typeSelect = document.getElementById(`typeSelect_${userId}`);
+        if (!eventSelect) return;
+        const eventId = `${eventSelect.value}_${typeSelect.value}`;
+        const typeId = typeSelect ? typeSelect.value : '';
+
+        if (!eventSelect.value) {
+            alert('Выберите событие (medal).');
+            return;
+        }
+
+        const user = this.currentData.NwfUsers[userId];
+        if (!user) return;
+        user.awards = user.awards || [];
+
+        if (user.awards.includes(eventId)) {
+            // Уже есть
+            alert('Пользователь уже имеет эту награду.');
+            return;
+        }
+
+        // Мы добавляем выбранный eventId в массив наград.
+        // Примечание: если у вас в проекте ожидается другой формат (например composite id),
+        // замените логику формирования awardId здесь.
+        user.awards.push(eventId);
+        this.renderUsers();
+    }
+
+    removeUserAward(userId, awardId) {
+        const user = this.currentData.NwfUsers[userId];
+        if (!user || !user.awards) return;
+        user.awards = user.awards.filter(a => a !== awardId);
+        this.renderUsers();
+    }
+
+    //    ШТУКИ ОТ ДОБАВЛЕНИЯ МЕДАЛЕК
+    // \ ----------------------------- /
+
+    renderEvents() {
+        const container = document.getElementById('eventstablebody');
         container.innerHTML = '';
         
-        Object.entries(this.currentData.awards).forEach(([id, award]) => {
-            const card = document.createElement('div');
+        Object.entries(this.currentData.NwfEvents).forEach(([id, event]) => {
+            const card = document.createElement('tr');
             card.className = 'item-card';
+            
             card.innerHTML = `
-                <div class="award-preview">
-                    <img src="img/award/${award.img}" alt="${award.name}">
-                    <div>
-                        <input type="text" value="${award.name}" placeholder="Name" onchange="admin.updateAward('${id}', 'name', this.value)">
-                        <input type="text" value="${award.img}" placeholder="Image" onchange="admin.updateAward('${id}', 'img', this.value)">
-                        <select onchange="admin.updateAward('${id}', 'type', this.value)">
-                            ${Object.keys(this.currentData.types).map(type => 
-                                `<option value="${type}" ${award.type === type ? 'selected' : ''}>${type}</option>`
-                            ).join('')}
-                        </select>
-                    </div>
-                </div>
-                <div class="item-controls">
-                    <button class="delete-btn" onclick="admin.deleteAward('${id}')">Удалить</button>
-                </div>
+                <tr>
+                    <td><input type="text" value="${id}" placeholder="Event ID" onchange="admin.updateEventId('${id}', this.value)"></td>
+                    <td><input type="text" value="${event.name || ''}" placeholder="Event Name" onchange="admin.updateEvent('${id}', 'name', this.value)"></td>
+                    <td><input type="text" value="${event.date || ''}" placeholder="Date (DD.MM.YYYY)" onchange="admin.updateEvent('${id}', 'date', this.value)"></td>
+                    <td><input type="text" value="${event.map || ''}" placeholder="Map id (from EE Lib)" onchange="admin.updateEvent('${id}', 'map', this.value)"></td>
+                    <td><input type="text" value="${event.img || ''}" placeholder="Image filename" onchange="admin.updateEvent('${id}', 'img', this.value)"></td>
+                </tr>
+                <!--div class="item-controls">
+                    <button class="delete-btn" onclick="admin.deleteAward('${id}')">Del</button>
+                </div-->
             `;
+            
             container.appendChild(card);
         });
     }
@@ -144,16 +220,17 @@ class AdminPanel {
         const container = document.getElementById('typesList');
         container.innerHTML = '';
         
-        Object.entries(this.currentData.types).forEach(([type, score]) => {
+        Object.entries(this.currentData.NwfTypes).forEach(([type, params]) => {
             const card = document.createElement('div');
             card.className = 'item-card';
             card.innerHTML = `
                 <div>
                     <input type="text" value="${type}" placeholder="Type" onchange="admin.updateType('${type}', 'name', this.value)">
-                    <input type="number" value="${score}" placeholder="Score" onchange="admin.updateType('${type}', 'score', this.value)">
+                    <input type="number" value="${params.score}" placeholder="Score" onchange="admin.updateType('${type}', 'params.score', this.value)">
+                    <input type="string" value="${params.name}" placeholder="Name" onchange="admin.updateType('${type}', 'params.name', this.value)">
                 </div>
                 <div class="item-controls">
-                    <button class="delete-btn" onclick="admin.deleteType('${type}')">Удалить</button>
+                    <button class="delete-btn" onclick="admin.deleteType('${type}')">Del</button>
                 </div>
             `;
             container.appendChild(card);
@@ -162,7 +239,7 @@ class AdminPanel {
 
     addUser() {
         const id = 'new_user_' + Date.now();
-        this.currentData.users[id] = {
+        this.currentData.NwfUsers[id] = {
             id: id,
             discord: '',
             discordid: '',
@@ -173,98 +250,124 @@ class AdminPanel {
         this.renderUsers();
     }
 
-    addAward() {
-        const id = 'new_award_' + Date.now();
-        this.currentData.awards[id] = {
+    addEvent() {
+        const id = 'event_' + Date.now();
+        this.currentData.NwfEvents[id] = {
             name: '',
+            date: new Date().toLocaleDateString('ru-RU').replace(/\./g, '.'),
             img: '',
-            type: Object.keys(this.currentData.types)[0]
+            map: ''
         };
-        this.renderAwards();
+        this.renderEvents();
     }
 
     addType() {
         const id = 'new_type_' + Date.now();
-        this.currentData.types[id] = 1;
+        this.currentData.NwfTypes[id] = 1;
         this.renderTypes();
     }
 
     updateUser(id, field, value) {
-        if (!this.currentData.users[id]) return;
-        this.currentData.users[id][field] = value;
+        if (!this.currentData.NwfUsers[id]) return;
+        this.currentData.NwfUsers[id][field] = value;
     }
 
     handleAwardCheckbox(userId, awardId, checked) {
-        if (!this.currentData.users[userId]) return;
+        if (!this.currentData.NwfUsers[userId]) return;
         
         if (checked) {
             // Add award if not already present
-            if (!this.currentData.users[userId].awards.includes(awardId)) {
-                this.currentData.users[userId].awards.push(awardId);
+            if (!this.currentData.NwfUsers[userId].awards.includes(awardId)) {
+                this.currentData.NwfUsers[userId].awards.push(awardId);
             }
         } else {
             // Remove award
-            this.currentData.users[userId].awards = 
-                this.currentData.users[userId].awards.filter(id => id !== awardId);
+            this.currentData.NwfUsers[userId].awards = 
+                this.currentData.NwfUsers[userId].awards.filter(id => id !== awardId);
         }
     }
 
     updateUserAwards(id, awards) {
-        if (!this.currentData.users[id]) return;
-        this.currentData.users[id].awards = awards;
+        if (!this.currentData.NwfUsers[id]) return;
+        this.currentData.NwfUsers[id].awards = awards;
     }
 
-    updateAward(id, field, value) {
-        if (!this.currentData.awards[id]) return;
-        this.currentData.awards[id][field] = value;
+    updateEvent(id, field, value) {
+        if (!this.currentData.NwfEvents[id]) return;
+        this.currentData.NwfEvents[id][field] = value;
+    }
+
+    updateEventId(oldId, newId) {
+        if (!this.currentData.NwfEvents[oldId] || oldId === newId) return;
+        
+        // Create new entry with new ID
+        this.currentData.NwfEvents[newId] = {...this.currentData.NwfEvents[oldId]};
+        // Delete old entry
+        delete this.currentData.NwfEvents[oldId];
+        
+        // Update all user awards that reference this event
+        Object.values(this.currentData.NwfUsers).forEach(user => {
+            if (user.awards) {
+                user.awards = user.awards.map(awardId => 
+                    awardId.startsWith(oldId) ? awardId.replace(oldId, newId) : awardId
+                );
+            }
+        });
+        
+        this.renderAll();
     }
 
     updateType(oldType, field, value) {
         if (field === 'name' && value !== oldType) {
-            this.currentData.types[value] = this.currentData.types[oldType];
-            delete this.currentData.types[oldType];
+            this.currentData.NwfTypes[value] = this.currentData.NwfTypes[oldType];
+            delete this.currentData.NwfTypes[oldType];
             // Update award references
-            Object.values(this.currentData.awards).forEach(award => {
+            Object.values(this.currentData.NwfEvents).forEach(award => {
                 if (award.type === oldType) {
                     award.type = value;
                 }
             });
         } else if (field === 'score') {
-            this.currentData.types[oldType] = parseInt(value) || 0;
+            this.currentData.NwfTypes[oldType] = parseInt(value) || 0;
         }
         this.renderAll();
     }
 
     deleteUser(id) {
-        delete this.currentData.users[id];
+        delete this.currentData.NwfUsers[id];
         this.renderUsers();
     }
 
     deleteAward(id) {
-        delete this.currentData.awards[id];
+        delete this.currentData.NwfEvents[id];
         // Remove award from users
-        Object.values(this.currentData.users).forEach(user => {
+        Object.values(this.currentData.NwfUsers).forEach(user => {
             user.awards = user.awards.filter(a => a !== id);
         });
         this.renderAll();
     }
 
     deleteType(type) {
-        delete this.currentData.types[type];
+        delete this.currentData.NwfTypes[type];
         // Remove type from awards
-        Object.values(this.currentData.awards).forEach(award => {
+        Object.values(this.currentData.NwfEvents).forEach(award => {
             if (award.type === type) {
-                award.type = Object.keys(this.currentData.types)[0] || '';
+                award.type = Object.keys(this.currentData.NwfTypes)[0] || '';
             }
         });
         this.renderAll();
     }
 
     async saveChanges() {
+        alert('!');
         if (document.location.href.includes('.html')) {
-            navigator.clipboard.writeText(`const users = ${JSON.stringify(this.currentData.users, null, 4)};\n\n` +
-                          `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
-                          `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`);
+            try {
+            navigator.clipboard.writeText(`const NwfUsers = ${JSON.stringify(this.currentData.NwfUsers, null, 4)};\n\n` +
+                          `const NwfTypes = ${JSON.stringify(this.currentData.NwfTypes, null, 4)};\n\n` +
+                          `const NwfEvents = ${JSON.stringify(this.currentData.NwfEvents, null, 4)};\n`);
+            } catch(e) {
+                alert(e);
+            }
         } else {
         try {
             // First, get the current file's SHA
@@ -279,9 +382,9 @@ class AdminPanel {
             }
             
             const fileData = await getFileResponse.json();
-            const content = `const users = ${JSON.stringify(this.currentData.users, null, 4)};\n\n` +
-                          `const awards = ${JSON.stringify(this.currentData.awards, null, 4)};\n\n` +
-                          `const types = ${JSON.stringify(this.currentData.types, null, 4)};\n`;
+            const content = `const NwfUsers = ${JSON.stringify(this.currentData.NwfUsers, null, 4)};\n\n` +
+                          `const NwfEvents = ${JSON.stringify(this.currentData.NwfEvents, null, 4)};\n\n` +
+                          `const NwfTypes = ${JSON.stringify(this.currentData.NwfTypes, null, 4)};\n`;
 
             const response = await fetch('https://api.github.com/repos/NWF-winner-s-table/NWF-winner-s-table.github.io/contents/users.js', {
                 method: 'PUT',
