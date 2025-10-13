@@ -68,7 +68,8 @@ const users = {
     },
 	"inka": {
 		"id": "inka",
-		"discord": "1050563653394505728",
+		"discord": "plagers1",
+		"discordid": "1050563653394505728",
 		"gamename": "Plagers",
 		"awards": [
 		    "tigerlandnew_global",
@@ -102,7 +103,8 @@ const users = {
 	},
 	"napoleon": {
 		"id": "napoleon",
-		"discord": "1192203917757517825",
+		"discord": "napoleon0544",
+		"discordid": "1192203917757517825",
 		"gamename": "Napoleon",
 		"awards": [
 		    "hre_global",
@@ -117,7 +119,8 @@ const users = {
 	},
 	"publicnuisance": [
 	    "id": "publicnuisance",
-		"discord": "1114590604668706927",
+		"discord": "stewardconstruct.",
+		"discordid": "1114590604668706927",
 		"gamename": "Public Nuisance",
 		"awards": [
 		    "euoemodern_great",
@@ -129,7 +132,8 @@ const users = {
 	],
 	"mrgoxlem": [
 	    "id": "mrgoxlem",
-		"discord": "1223823017004634206",
+		"discord": "self_presev",
+		"discordid": "1223823017004634206",
 		"gamename": "Mrgoxlem",
 		"awards": [
 		    "feudalismac_global",
@@ -142,7 +146,8 @@ const users = {
 	],
 	"useless": [
 	    "id": "useless",
-		"discord": "1111413830443081728",
+		"discord": "useless_yo",
+		"discordid": "1111413830443081728",
 		"gamename": "Useless",
 		"awards": [
 		    "eurasia6coalition_great",
@@ -256,7 +261,7 @@ const events = {
 	africa: {
 		name: 'Africa',
 		date: '02.11.2024',
-		img: 'africa.png',
+		img: 'africa.jpg',
 	},
 	middleeast: {
 		name: 'Middle East',
