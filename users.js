@@ -502,11 +502,6 @@ const NwfEvents = {
 		date: '01.03.2025',
 		img: 'ah.png',
 	},
-    fullrpmoderneuam: { // i add it for exist as minimum one event from NWF in future for tests
-		name: 'Full RP Modern Day',
-		date: '18.10.2025',
-		map: 'pelo_euam_v2_modern-en',
-	},
 	paraguayanwar: {
 		name: 'Paraguayan War',
 		date: '08.03.2025',
