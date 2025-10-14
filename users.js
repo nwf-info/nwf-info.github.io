@@ -557,4 +557,9 @@ const NwfEvents = {
 		date: '11.05.2025',
 		img: 'worldkaiserreich.png',
 	},
+	rpeuammodern: {
+		name: "Full RP EU-NA Modern",
+		date: '18.10.2025',
+		map: 'pelo_euam_v2_modern-en',
+	}
 }
