@@ -829,6 +829,7 @@ const NwfEvents = {
 		name: "Full RP EU-NA Modern",
 		date: '18.10.2025',
 		map: 'pelo_euam_v2_modern-en',
+  discord: '1427521251601289226',
 	},
 	usa_civilwar: {
 		name: 'American Civil War',
