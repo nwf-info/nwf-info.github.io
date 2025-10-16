@@ -871,4 +871,10 @@ const NwfEvents = {
 		date: '11.10.2025',
 		map: 'zachary_deadhand_v1_2022',
 	},
+	firsteventp2: {
+		name: 'First Event Part 2',
+		date: '26.10.2025',
+		img: 'firsteventp2.png',
+		discord: '1428487660850253874'
+	},
 }
