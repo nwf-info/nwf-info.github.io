@@ -795,6 +795,11 @@ const NwfEvents = {
 		date: '05.04.2025',
 		img: 'eurasia5.png',
 	},
+	eurasia6: {
+		name: 'Eurasia: Part 6',
+		date: '25.10.2025',
+		img: 'eurasia6.png',
+	},
 	worldww2: {
 		name: 'World WW2',
 		date: '12.04.2025',
@@ -829,41 +834,41 @@ const NwfEvents = {
 		name: "Full RP EU-NA Modern",
 		date: '18.10.2025',
 		map: 'pelo_euam_v2_modern-en',
-  discord: '1427521251601289226',
+		discord: '1427521251601289226',
 	},
 	usa_civilwar: {
 		name: 'American Civil War',
 		date: '24.05.2025',
-		map: 'usa_civilwar.png',
+		img: 'usa_civilwar.png',
 	},
 	world_coldwar: {
 		name: 'Cold War',
 		date: '01.06.2025',
-		map: 'world_coldwar.png',
+		img: 'world_coldwar.png',
 	},
 	ottoman_win_ww1: {
 		name: 'Ottomans Win WW1',
 		date: '07.06.2025',
-		map: 'ottoman_win_ww1.png',
+		img: 'ottoman_win_ww1.png',
 	},
 	worldwarnaminecraft: {
 		name: 'Warnament Minecraft',
 		date: '30.08.2025',
-		map: 'worldwarnaminecraft.png',
+		img: 'worldwarnaminecraft.png',
 	},
 	riseofottomans: {
 		name: 'Rise of the Ottomans',
 		date: '16.08.2025',
-		map: 'riseofottomans.png',
+		img: 'riseofottomans.png',
 	},
 	novuscivilwar: {
 		name: 'American Civil War',
 		date: '07.09.2025',
-		map: 'novuscivilwar.png',
+		img: 'novuscivilwar.png',
 	},
 	deadhand: {
 		name: 'Dead Hand',
 		date: '11.10.2025',
-		map: 'deadhand.png',
+		map: 'zachary_deadhand_v1_2022',
 	},
 }
