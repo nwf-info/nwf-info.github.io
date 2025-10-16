@@ -1,13 +1,13 @@
 body {
-    background: linear-gradient(135deg, #21211A, #1C2125, #1F2120);
+    background: linear-gradient(135deg, #3b2828, #5c2727, #330b0b);
     color: white;
 }
 .navpanel {
-    background: linear-gradient(135deg, #1f212071);
+    background: linear-gradient(135deg, #3d262671);
 }
 
 .navbtn {
-    background: linear-gradient(135deg, #382f3c86, #4e53505f);
+    background: linear-gradient(135deg, #3c2f2f86, #5743435f);
 }
 
 .list-table tbody tr.userThisIs td,
