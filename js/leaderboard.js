@@ -141,9 +141,7 @@ class Leaderboard {
                     img.src = `img/award/${type}.png`;
                     img.title = `${NwfTypes[type].name} ${NwfEvents[awardData.event]?.name || ''}`;
                     img.onclick = () => this.showAward(type);
-                    img.style.width = '24px';
-                    img.style.height = '24px';
-                    img.style.cursor = 'pointer';
+                    img.classList.add('smallAwardIcon');
 
                     // создаём элемент для количества
                     const countSpan = document.createElement('span');
@@ -233,6 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Инициализация leaderboard...');
     window.leaderboard = new Leaderboard(); // Исправлено имя класса
     console.log('leaderboard инициализирован:', window.leaderboard);
+
+    if (window.innerWidth < window.innerHeight) {
+        window.leaderboard.isAwardsShort = true;
+        document.getElementById('awardsMode').checked = true;
+    }
 
     window.leaderboard.update();
 });
