@@ -1,4 +1,8 @@
-class Leaderboard { // Исправлено: классы должны называться с большой буквы
+class Leaderboard {
+    constructor() {
+        let isAwardsShort = false;
+    }
+
     awards(id) {
         const parts = id.split('_');
         const result = {
@@ -108,16 +112,64 @@ class Leaderboard { // Исправлено: классы должны назы�
                 return this.calcScoreAward(b) - this.calcScoreAward(a);
             });
 
-            sortedAwards.forEach(awardKey => {
-                const award = this.awards(awardKey);
-                if (award && NwfTypes[award.type]) { // Проверка существования типа
+            if (this.isAwardsShort) {
+                // Подсчитываем количество наград каждого типа
+                const awardCounts = {};
+                sortedAwards.forEach(awardKey => {
+                    const award = this.awards(awardKey);
+                    if (award && NwfTypes[award.type]) {
+                        if (!awardCounts[award.type]) {
+                            awardCounts[award.type] = { count: 0, event: award.event };
+                        }
+                        awardCounts[award.type].count++;
+                    }
+                });
+
+                // Теперь создаём div-блоки с иконкой и числом
+                Object.keys(awardCounts).forEach(type => {
+                    const awardData = awardCounts[type];
+
+                    // создаём контейнер для награды
+                    const awardDiv = document.createElement('div');
+                    awardDiv.classList.add('award-item'); // можно стилизовать через CSS
+                    awardDiv.style.display = 'inline-flex';
+                    awardDiv.style.alignItems = 'center';
+                    awardDiv.style.marginRight = '8px';
+
+                    // создаём иконку
                     const img = document.createElement('img');
-                    img.src = `img/award/${award.type}.png`;
-                    img.title = `${NwfTypes[award.type].name} ${NwfEvents[award.event]?.name || ''}`; // Проверка события
-                    img.onclick = () => this.showAward(awardKey); // Исправлен вызов метода
-                    tdAwards.appendChild(img);
-                }
-            });
+                    img.src = `img/award/${type}.png`;
+                    img.title = `${NwfTypes[type].name} ${NwfEvents[awardData.event]?.name || ''}`;
+                    img.onclick = () => this.showAward(type);
+                    img.style.width = '24px';
+                    img.style.height = '24px';
+                    img.style.cursor = 'pointer';
+
+                    // создаём элемент для количества
+                    const countSpan = document.createElement('span');
+                    countSpan.textContent = `×${awardData.count}`;
+                    countSpan.style.marginLeft = '4px';
+                    countSpan.style.fontWeight = 'bold';
+
+                    // добавляем элементы в div
+                    awardDiv.appendChild(img);
+                    awardDiv.appendChild(countSpan);
+
+                    // вставляем в основную ячейку
+                    tdAwards.appendChild(awardDiv);
+                });
+            } else {
+                sortedAwards.forEach(awardKey => {
+                    const award = this.awards(awardKey);
+                    if (award && NwfTypes[award.type]) { // Проверка существования типа
+                        const img = document.createElement('img');
+                        img.src = `img/award/${award.type}.png`;
+                        img.title = `${NwfTypes[award.type].name} ${NwfEvents[award.event]?.name || ''}`; // Проверка события
+                        img.onclick = () => this.showAward(awardKey); // Исправлен вызов метода
+                        tdAwards.appendChild(img);
+                    }
+                });
+            };
             tr.appendChild(tdAwards);
 
             // Events column
