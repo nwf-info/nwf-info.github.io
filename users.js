@@ -33,6 +33,7 @@ const NwfUsers = {
 			"africa_global",
 			"middleeast_global",
 			"ww2og_global",
+			"worldNapoleon_super",
         ],
         "events": [
 		    "worldNapoleon",
@@ -110,6 +111,7 @@ const NwfUsers = {
 		    "hre_global",
 			"owbcaribean_global",
 			"crimeanwar_former",
+			"worldNapoleon_global",
 		],
 		"events": [
 		    "hre",
@@ -124,6 +126,7 @@ const NwfUsers = {
 		"gamename": "Public Nuisance",
 		"awards": [
 		    "euoemodern_great",
+			"worldNapoleon_former",
 		],
 		"events": [
 		    "euomodern",
@@ -164,6 +167,7 @@ const NwfUsers = {
 		"awards": [
 		    "eurasiaModern_super",
 			"euammodern_great",
+			"worldNapoleon_global",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -189,6 +193,7 @@ const NwfUsers = {
 			"eurasia6coalition_global",
 			"owbcaribean_great",
 			"eurasia2_great",
+			"worldNapoleon_winner",
 		],
 		"events": [
 		    "euoemodern",
@@ -221,6 +226,7 @@ const NwfUsers = {
 			"worldkaiserreichp2_global",
 			"euammodern_global",
 			"feudalismac_great",
+			"worldNapoleon_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -270,6 +276,7 @@ const NwfUsers = {
 		"awards": [
 		    "eurasiaModern_global",
 			"crimeanwar_great",
+			"worldNapoleon_great",
 		],
 		"events": [
 		    "crimeanwar",
@@ -313,6 +320,7 @@ const NwfUsers = {
 			"hre_former",
 			"crimeanwar_former",
 			"feudalismac_former",
+			"worldNapoleon_former",
 		],
 	},
 	"pepper": {
@@ -323,6 +331,7 @@ const NwfUsers = {
 		"awards": [
 		    "worldkaiserreichp2_great",
 			"euammodern_great",
+			"worldNapoleon_great",
 		],
 		"events": [
 		    "worldww2",
@@ -345,7 +354,9 @@ const NwfUsers = {
 		"discord": "PsychoPomp",
 		"discordid": "1314822053488230501",
 		"gamename": "psychopomp",
-		"awards": [],
+		"awards": [
+		    "worldNapoleon_great",
+		],
 		"events": [
 		    "deadhand",
 			"worldNapoleon",
