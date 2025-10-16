@@ -803,7 +803,8 @@ const NwfEvents = {
 	worldww2: {
 		name: 'World WW2',
 		date: '12.04.2025',
-		img: 'worldww2.png',
+		//img: 'worldww2.png',
+		map: 'zachary_world_v1_ww2z'
 	},
 	riseofislam: {
 		name: 'Rise of Islam',
@@ -828,7 +829,8 @@ const NwfEvents = {
 	worldkaiserreich: {
 		name: 'Kaiserreich',
 		date: '11.05.2025',
-		img: 'worldkaiserreich.png',
+		//img: 'worldkaiserreich.png',
+		map: 'zachary_world_v1_kaiserreich',
 	},
 	rpeuammodern: {
 		name: "Full RP EU-NA Modern",
