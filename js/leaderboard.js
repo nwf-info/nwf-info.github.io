@@ -30,10 +30,26 @@ class Leaderboard { // Исправлено: классы должны назы�
 
         // Sort users by ratio (highest first)
         usersArray.sort((a, b) => {
-            /*const ratioA = a.events?.length ? a.score / a.events.length : 0;
-            const ratioB = b.events?.length ? b.score / b.events.length : 0;*/
-            const ratioA = a.awards?.length ? a.score / a.awards.length : 0;
-            const ratioB = b.awards?.length ? b.score / b.awards.length : 0;
+            let ratioA;
+            let ratioB;
+            if (a.events) {
+                if (a.events.length < a.awards.length) {
+                    ratioA = a.score / a.awards.length;
+                } else {
+                    ratioA = a.score / a.events.length;
+                }
+            } else {
+                ratioA = a.score / a.awards.length;
+            }
+            if (b.events) {
+                if (b.events.length < b.awards.length) {
+                    ratioB = b.score / b.awards.length;
+                } else {
+                    ratioB = b.score / b.events.length;
+                }
+            } else {
+                ratioB = b.score / b.awards.length;
+            }
             return ratioB - ratioA;
         });
 
@@ -51,8 +67,17 @@ class Leaderboard { // Исправлено: классы должны назы�
             
             // Ratio column - исправлен расчет
             const tdRatio = document.createElement('td');
-            // const ratio = user.events?.length ? (user.score / user.events.length).toFixed(2) : "0.00";
-            const ratio = user.events?.length ? (user.score / user.events.length).toFixed(2) : "0.00";
+            let ratio;
+            //    ratio = user.events?.length ? (user.score / user.events.length).toFixed(2) : "0.00";
+            if (user.events) {
+                if (user.events.length < user.awards.length) {
+                    ratio = (user.score / user.awards.length).toFixed(2);
+                } else {
+                    ratio = (user.score / user.events.length).toFixed(2);
+                }
+            } else {
+                ratio = (user.score / user.awards.length).toFixed(2);
+            }
             tdRatio.textContent = ratio;
             tr.appendChild(tdRatio);
 
@@ -96,9 +121,17 @@ class Leaderboard { // Исправлено: классы должны назы�
             tr.appendChild(tdAwards);
 
             // Events column
-            /*const tdEvents = document.createElement('td');
-            tdEvents.textContent = user.events?.length || 0;
-            tr.appendChild(tdEvents);*/
+            const tdEvents = document.createElement('td');
+            if (user.events) {
+                if (user.events.length < user.awards.length) {
+                    tdEvents.textContent = user.awards?.length || 0;
+                } else {
+                    tdEvents.textContent = user.events?.length || 0;
+                }
+            } else {
+                tdEvents.textContent = user.awards?.length || 0;
+            }
+            tr.appendChild(tdEvents);
 
             tbody.appendChild(tr);
         });
