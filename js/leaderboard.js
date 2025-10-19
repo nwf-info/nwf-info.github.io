@@ -140,7 +140,7 @@ class Leaderboard {
                     const img = document.createElement('img');
                     img.src = `img/award/${type}.png`;
                     img.title = `${NwfTypes[type].name} ${NwfEvents[awardData.event]?.name || ''}`;
-                    img.onclick = () => this.showAward(type);
+                    img.onclick = () => this.showAward(type, user.id, sortedAwards);
                     img.classList.add('smallAwardIcon');
 
                     // создаём элемент для количества
@@ -187,7 +187,70 @@ class Leaderboard {
         });
     }
 
-    showAward(id) {
+    showAward(id, user, sortedAwards) {
+        if (user) {
+            const modalElement = document.getElementById('modal2');
+            modalElement.innerHTML = '';
+            if (!modalElement) return; // Проверка существования модального окна
+            let medalsThisType = [];
+
+            NwfUsers[user].awards.forEach(medal => {
+                if (medal.includes(id)) medalsThisType.push(medal);
+            });
+            //alert(JSON.stringify(medalsThisType));
+            
+            modalElement.classList.add('active');
+            const modalDiv = document.createElement('div');
+            modalDiv.innerHTML = `
+                <div style="justify-self: right;">
+                    <button onclick="document.getElementById('modal2').classList.remove('active')" class="modalClose">×</button>
+                </div>`;
+            modalDiv.id = "modalDiv";
+            modalElement.appendChild(modalDiv);
+            const modalMedalsList = document.createElement('div');
+            modalMedalsList.id = 'modalMedalsList';
+            modalDiv.appendChild(modalMedalsList);
+            // modalElement.innerHTML = `${modalElement.innerHTML}`;
+                medalsThisType.forEach(awardKey => {
+                    const award = this.awards(awardKey);
+                    if (award && NwfTypes[award.type]) { // Проверка существования типа
+                        const img = document.createElement('img');
+                        img.src = `img/award/${award.type}.png`;
+                        img.title = `${NwfTypes[award.type].name} ${NwfEvents[award.event]?.name || ''}`; // Проверка события
+                        img.onclick = () => this.showAward(awardKey); // Исправлен вызов метода
+                        modalMedalsList.appendChild(img);
+                    }
+                });
+            
+            const awardInfo = this.awards(id);
+            const eventInfo = NwfEvents[awardInfo.event];
+            const typeInfo = NwfTypes[awardInfo.type];
+            
+            if (!eventInfo || !typeInfo) return; // Проверка существования данных
+
+            modalElement.classList.add('active');
+            modalElement.innerHTML = `
+            <div class="modalcontent">
+                <div style="justify-self: right;">
+                    <button onclick="document.getElementById('modal').classList.remove('active')" class="modalClose">×</button>
+                </div>
+                <div class="stroke">
+                    <b data-translate="nameDT">${window.langMgr?.trs('nameDT') || 'Name'}</b>
+                    <p>${typeInfo.name} ${eventInfo.name}</p>
+                </div>
+                <div class="stroke">
+                    <b data-translate="scoreDT">${window.langMgr?.trs('scoreDT') || 'Score'}</b>
+                    <p>${this.calcScoreAward(id)}</p>
+                </div>
+                <div class="stroke">
+                    <b data-translate="dateDT">${window.langMgr?.trs('dateDT') || 'Date'}</b>
+                    <p>${eventInfo.date}</p>
+                </div>
+                <div class="imageDiv">
+                    <img src="img/award/${awardInfo.type}.png"> <!-- Исправлено: было awardInfo.img -->
+                </div>
+            </div>`;
+        } else {
         try {
         const modalElement = document.getElementById('modal');
         if (!modalElement) return; // Проверка существования модального окна
@@ -223,6 +286,7 @@ class Leaderboard {
         } catch(e) {
             alert(e);
         }
+        }
     }
 }
 
@@ -236,6 +300,8 @@ document.addEventListener('DOMContentLoaded', () => {
         window.leaderboard.isAwardsShort = true;
         document.getElementById('awardsMode').checked = true;
     }
+    window.leaderboard.isAwardsShort = true;
+    document.getElementById('awardsMode').checked = true;
 
     window.leaderboard.update();
 });

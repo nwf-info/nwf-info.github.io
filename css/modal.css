@@ -1,8 +1,8 @@
-#modal {
+#modal, #modal2 {
     display: none;
 }
 
-#modal.active {
+#modal.active, #modal2.active {
     display: block;
     position: fixed;
     top: 0;
@@ -23,7 +23,7 @@
     justify-content: space-between;
 }
 
-.modal b {
+.modal b, #modal2 b {
     margin-right: 5px;
 }
 
@@ -60,4 +60,14 @@
 
 .infoMedals p {
     text-align: right;
+}
+
+#modalMedalsList {
+    display: flex;
+}
+
+#modalMedalsList img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
 }
