@@ -34,6 +34,7 @@ const NwfUsers = {
 			"middleeast_global",
 			"ww2og_global",
 			"worldNapoleon_super",
+			"rpeuammodern_winner",
         ],
         "events": [
 		    "worldNapoleon",
@@ -65,6 +66,7 @@ const NwfUsers = {
 			"africa",
 			"middleeast",
 			"ww2og",
+			"rpeuammodern",
 		],
     },
 	"inka": {
@@ -85,6 +87,7 @@ const NwfUsers = {
 			"worldww2_great",
 			"paraguayanwar_great",
 			"hre_former",
+			"rpeuammodern_super",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -100,6 +103,7 @@ const NwfUsers = {
 			"worldww2",
 			"paraguayanwar",
 			"hre",
+			"rpeuammodern",
 		],
 	},
 	"napoleon": {
@@ -119,11 +123,23 @@ const NwfUsers = {
 			"historicalww1",
 			"eurasia2_global",
 			"africa_global",
+			"rpeuammodern_global",
 		],
 		"events": [
 		    "hre",
 			"owbcaribean",
 			"crimeanwar",
+			"rpeuammodern",
+			"euammodern",
+			"worldNapoleon",
+			"historicalww1",
+			"eurasia2",
+			"ww2og",
+			"eurasia1",
+			"historicalww1",
+			"eurasia2",
+			"africa",
+			
 		],
 	},
 	"publicnuisance": {
@@ -152,6 +168,7 @@ const NwfUsers = {
 		"events": [
 		    "feudalismac",
 			"eurasiaModern",
+			"rpeuammodern",
 		],
 	},
 	"useless": {
@@ -164,6 +181,7 @@ const NwfUsers = {
 		],
 		"events": [
 		    "eurasia6coalition",
+			"rpeuammodern",
 		],
 	},
 	"eenot": {
@@ -175,10 +193,13 @@ const NwfUsers = {
 		    "eurasiaModern_super",
 			"euammodern_great",
 			"worldNapoleon_global",
+			"rpeuammodern_great",
 		],
 		"events": [
 		    "eurasiaModern",
 			"euammodern",
+			"worldNapoleon",
+			"rpeuammodern",
 		],
 	},
 	"totoska": {
@@ -216,6 +237,7 @@ const NwfUsers = {
 			"eurasia6coalition",
 			"owbcaribean",
 			"eurasia2",
+			"rpeuammodern",
 		],
 	},
 	"ottomanism": {
@@ -234,6 +256,7 @@ const NwfUsers = {
 			"euammodern_global",
 			"feudalismac_great",
 			"worldNapoleon_global",
+			"rpeuammodern_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -245,6 +268,7 @@ const NwfUsers = {
 			"worldkaiserreichp2",
 			"euammodern",
 			"feudalismac",
+			"rpeuammodern",
 		],
 	},
 	"eggnog": {
@@ -258,6 +282,7 @@ const NwfUsers = {
 			"owbcaribean_great",
 			"eurasiaModern_former",
 			"crimeanwar_former",
+			"rpeuammodern_global",
 		],
 		"events": [
 		    "ussr",
@@ -273,6 +298,7 @@ const NwfUsers = {
 			"eurasiaModern",
 			"deadhand",
 			"worldNapoleon",
+			"rpeuammodern",
 		],
 	},
 	"honse": {
@@ -284,12 +310,14 @@ const NwfUsers = {
 		    "eurasiaModern_global",
 			"crimeanwar_great",
 			"worldNapoleon_great",
+			"rpeuammodern_great",
 		],
 		"events": [
 		    "crimeanwar",
 			"hre",
 			"eurasiaModern",
 			"worldNapoleon",
+			"rpeuammodern",
 		],
 	},
 	"graycar": {
@@ -363,11 +391,12 @@ const NwfUsers = {
 		"gamename": "psychopomp",
 		"awards": [
 		    "worldNapoleon_great",
+			"rpeuammodern_super",
 		],
 		"events": [
 		    "deadhand",
 			"worldNapoleon",
-			"euammodern",
+			"rpeuammodern",
 		],
 	},
 	"castoktz": {
@@ -414,6 +443,7 @@ const NwfUsers = {
 			"springofnations",
 			"eurasiaww2",
 			"euammodern",
+			"rpeuammodern",
 		],
 	},
 	"purple": {
@@ -441,6 +471,7 @@ const NwfUsers = {
 			"worldkaiserreichp2",
 			"WW2",
 			"og",
+			"rpeuammodern",
 		],
 	},
 	"sinwrld": {
@@ -588,6 +619,18 @@ const NwfUsers = {
 			"ww2og",
 		],
 	},
+	"hanzen": {
+		"id": "hanzen",
+		"discord": "hanzen",
+		"discordid": "1264587555261775924",
+		"gamename": "hanzen",
+		"awards": [
+		    "rpeuammodern_great",
+		],
+		"events": [
+		    "rpeuammodern",
+		]
+	}
 };
 
 const NwfTypes = {
@@ -834,7 +877,7 @@ const NwfEvents = {
 	},
 	rpeuammodern: {
 		name: "Full RP EU-NA Modern",
-		date: '18.10.2025',
+		date: '19.10.2025',
 		map: 'pelo_euam_v2_modern-en',
 		discord: '1427521251601289226',
 	},
