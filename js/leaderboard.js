@@ -201,10 +201,7 @@ class Leaderboard {
             
             modalElement.classList.add('active');
             const modalDiv = document.createElement('div');
-            modalDiv.innerHTML = `
-                <div style="justify-self: right;">
-                    <button onclick="document.getElementById('modal2').classList.remove('active')" class="modalClose">×</button>
-                </div>`;
+            modalDiv.innerHTML = `<button onclick="document.getElementById('modal2').classList.remove('active')" class="modalClose">×</button>`;
             modalDiv.id = "modalDiv";
             modalElement.appendChild(modalDiv);
             const modalMedalsList = document.createElement('div');

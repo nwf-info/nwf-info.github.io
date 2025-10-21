@@ -64,10 +64,23 @@
 
 #modalMedalsList {
     display: flex;
+    gap: 0.5rem;
+    margin: 1rem;
 }
 
 #modalMedalsList img {
     width: 25px;
     height: 25px;
     cursor: pointer;
+}
+
+#modalDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#modalDiv .modalClose {
+    width: 30px;
+    height: 30px;
+    align-self: end;
 }
