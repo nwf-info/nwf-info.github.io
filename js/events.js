@@ -253,7 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const sourceOfEventDiv = document.createElement("div");
         sourceOfEventDiv.className = 'sourceOfEventDiv';
         if (typeof SatEvents !== 'undefined' && SatEvents[eventId]) {
-            if (SatEvents[eventId]) sourceOfEventDiv.innerHTML = `<img src='img/icons/saturn2.png' class='sourceOfEventImg' />`;
+            if (SatEvents[eventId]) sourceOfEventDiv.innerHTML = `<img src='img/icons/saturn3.png' class='sourceOfEventImg' />`;
             if (SatEvents[eventId]) card.appendChild(sourceOfEventDiv);
             card.style.filter = "sepia(0.75)";
         };
