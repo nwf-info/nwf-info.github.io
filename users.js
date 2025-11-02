@@ -35,7 +35,7 @@ const NwfUsers = {
 			"ww2og_global",
 			"worldNapoleon_super",
 			"rpeuammodern_winner",
-			"medcampaign_1_super",
+			"medcampaign1_super",
         ],
         "events": [
 		    "worldNapoleon",
@@ -68,7 +68,7 @@ const NwfUsers = {
 			"middleeast",
 			"ww2og",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
     },
 	"inka": {
@@ -106,7 +106,7 @@ const NwfUsers = {
 			"paraguayanwar",
 			"hre",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"napoleon": {
@@ -142,7 +142,7 @@ const NwfUsers = {
 			"historicalww1",
 			"eurasia2",
 			"africa",
-			"medcampaign_1",
+			"medcampaign1",
 			
 		],
 	},
@@ -158,7 +158,7 @@ const NwfUsers = {
 		"events": [
 		    "euomodern",
 			"worldNapoleon",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"mrgoxlem": {
@@ -169,13 +169,13 @@ const NwfUsers = {
 		"awards": [
 		    "feudalismac_global",
 			"eurasiaModern_former",
-			"medcampaign_1_former",
+			"medcampaign1_former",
 		],
 		"events": [
 		    "feudalismac",
 			"eurasiaModern",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"useless": {
@@ -201,14 +201,14 @@ const NwfUsers = {
 			"euammodern_great",
 			"worldNapoleon_global",
 			"rpeuammodern_great",
-			"medcampaign_1_global",
+			"medcampaign1_global",
 		],
 		"events": [
 		    "eurasiaModern",
 			"euammodern",
 			"worldNapoleon",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"totoska": {
@@ -231,7 +231,7 @@ const NwfUsers = {
 			"owbcaribean_great",
 			"eurasia2_great",
 			"worldNapoleon_winner",
-			"medcampaign_1_great",
+			"medcampaign1_great",
 		],
 		"events": [
 		    "euoemodern",
@@ -248,7 +248,7 @@ const NwfUsers = {
 			"owbcaribean",
 			"eurasia2",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"ottomanism": {
@@ -268,7 +268,7 @@ const NwfUsers = {
 			"feudalismac_great",
 			"worldNapoleon_global",
 			"rpeuammodern_global",
-			"medcampaign_1_global",
+			"medcampaign1_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -281,7 +281,7 @@ const NwfUsers = {
 			"euammodern",
 			"feudalismac",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"eggnog": {
@@ -296,7 +296,7 @@ const NwfUsers = {
 			"eurasiaModern_former",
 			"crimeanwar_former",
 			"rpeuammodern_global",
-			"medcampaign_1_great",
+			"medcampaign1_great",
 		],
 		"events": [
 		    "ussr",
@@ -313,7 +313,7 @@ const NwfUsers = {
 			"deadhand",
 			"worldNapoleon",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"honse": {
@@ -326,7 +326,7 @@ const NwfUsers = {
 			"crimeanwar_great",
 			"worldNapoleon_great",
 			"rpeuammodern_great",
-			"medcampaign_1_great",
+			"medcampaign1_great",
 		],
 		"events": [
 		    "crimeanwar",
@@ -334,7 +334,7 @@ const NwfUsers = {
 			"eurasiaModern",
 			"worldNapoleon",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"graycar": {
@@ -373,10 +373,10 @@ const NwfUsers = {
 			"crimeanwar_former",
 			"feudalismac_former",
 			"worldNapoleon_former",
-			"medcampaign_1_super",
+			"medcampaign1_super",
 		],
 		"events": [
-		    "medcampaign_1",
+		    "medcampaign1",
 		]
 	},
 	"pepper": {
@@ -403,7 +403,7 @@ const NwfUsers = {
 			"euammodern",
 			"deadhand",
 			"worldNapoleon",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"psycho": {
@@ -414,13 +414,13 @@ const NwfUsers = {
 		"awards": [
 		    "worldNapoleon_great",
 			"rpeuammodern_super",
-			"medcampaign_1_winner",
+			"medcampaign1_winner",
 		],
 		"events": [
 		    "deadhand",
 			"worldNapoleon",
 			"rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"castoktz": {
@@ -629,7 +629,7 @@ const NwfUsers = {
 			"eurasia1_great",
 		],
 		"events": [
-		    "medcampaign_1",
+		    "medcampaign1",
 		],
 	},
 	"steh": {
@@ -655,7 +655,7 @@ const NwfUsers = {
 		],
 		"events": [
 		    "rpeuammodern",
-			"medcampaign_1",
+			"medcampaign1",
 		]
 	},
 	"lurus": {
@@ -664,10 +664,10 @@ const NwfUsers = {
 		"discordid": "764533673512927242",
 		"gamename": "Lurus",
 		"awards": [
-		    "medcampaign_1_global",
+		    "medcampaign1_global",
 		],
 		"events": [
-		    "medcampaign_1",
+		    "medcampaign1",
 			"firsteventp2",
 			"world_napoleon",
 		],
@@ -678,12 +678,12 @@ const NwfUsers = {
 		"discordid": "993585215358386306",
 		"gamename": "Trid",
 		"awards": [
-		    "medcampaign_1_great",
+		    "medcampaign1_great",
 			"crimeanwar_global",
 		],
 		"events": [
 		    "crimeanwar",
-			"medcampaign_1",
+			"medcampaign1",
 		],
 	},
 	"fordeum": {
@@ -692,10 +692,10 @@ const NwfUsers = {
 		"discordid": "781106249915564062",
 		"gamename": "Forduem",
 		"awards": [
-		    "medcampaign_1_former",
+		    "medcampaign1_former",
 		],
 		"events": [
-		    "medcampaign_1",
+		    "medcampaign1",
 		],
 	},
 };
@@ -989,19 +989,19 @@ const NwfEvents = {
 		img: 'firsteventp2.png',
 		discord: '1428487660850253874'
 	},
-	medcampaign_1: {
+	medcampaign1: {
 		name: 'Medieval RP campaign Day 1',
 		date: '02.10.2025',
-		img: 'medcampaign_1.png',
+		img: 'medcampaign1.png',
 	},
-	medcampaign_2: {
+	medcampaign2: {
 		name: 'Medieval RP campaign Day 2',
 		date: '02.10.2025',
-		img: 'medcampaign_2.png',
+		img: 'medcampaign2.png',
 	},
-	medcampaign_3: {
+	medcampaign3: {
 		name: 'Medieval RP campaign Day 3',
 		date: '02.10.2025',
-		img: 'medcampaign_3.png',
+		img: 'medcampaign3.png',
 	},
 }
