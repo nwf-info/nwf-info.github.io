@@ -909,6 +909,7 @@ const NwfEvents = {
 		name: 'Eurasia: Part 6',
 		date: '25.10.2025',
 		img: 'eurasia6.png',
+		canceled: true,
 	},
 	worldww2: {
 		name: 'World WW2',
@@ -993,17 +994,17 @@ const NwfEvents = {
 	},
 	medcampaign1: {
 		name: 'Medieval RP campaign Day 1',
-		date: '02.10.2025',
+		date: '02.11.2025',
 		img: 'medcampaign1.png',
 	},
 	medcampaign2: {
 		name: 'Medieval RP campaign Day 2',
-		date: '02.10.2025',
+		date: '08.11.2025',
 		img: 'medcampaign2.png',
 	},
 	medcampaign3: {
 		name: 'Medieval RP campaign Day 3',
-		date: '02.10.2025',
+		date: '09.11.2025',
 		img: 'medcampaign3.png',
 	},
 }
