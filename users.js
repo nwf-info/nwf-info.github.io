@@ -947,6 +947,7 @@ const NwfEvents = {
 		date: '19.10.2025',
 		map: 'pelo_euam_v2_modern-en',
 		discord: '1427521251601289226',
+		canceled: true,
 	},
 	usa_civilwar: {
 		name: 'American Civil War',
@@ -987,7 +988,8 @@ const NwfEvents = {
 		name: 'First Event Part 2',
 		date: '26.10.2025',
 		img: 'firsteventp2.png',
-		discord: '1428487660850253874'
+		discord: '1428487660850253874',
+		canceled: true,
 	},
 	medcampaign1: {
 		name: 'Medieval RP campaign Day 1',
