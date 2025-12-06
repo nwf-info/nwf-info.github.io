@@ -36,6 +36,9 @@ const NwfUsers = {
 			"worldNapoleon_super",
 			"rpeuammodern_winner",
 			"medcampaign1_super",
+			"euoeww2_global",
+			"pelopon_super",
+			"europe_coldwar_global",
         ],
         "events": [
 		    "worldNapoleon",
@@ -69,6 +72,9 @@ const NwfUsers = {
 			"ww2og",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
+			"pelopon",
+			"europe_coldwar",
 		],
     },
 	"inka": {
@@ -90,6 +96,7 @@ const NwfUsers = {
 			"paraguayanwar_great",
 			"hre_former",
 			"rpeuammodern_super",
+			"euoeww2_global",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -107,6 +114,7 @@ const NwfUsers = {
 			"hre",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
 		],
 	},
 	"napoleon": {
@@ -154,11 +162,13 @@ const NwfUsers = {
 		"awards": [
 		    "euoemodern_great",
 			"worldNapoleon_former",
+			"euoeww2_great",
 		],
 		"events": [
 		    "euomodern",
 			"worldNapoleon",
 			"medcampaign1",
+			"euoeww2",
 		],
 	},
 	"mrgoxlem": {
@@ -202,6 +212,8 @@ const NwfUsers = {
 			"worldNapoleon_global",
 			"rpeuammodern_great",
 			"medcampaign1_global",
+			"euoeww2_super",
+			"europe_coldwar_global",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -209,6 +221,8 @@ const NwfUsers = {
 			"worldNapoleon",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
+			"europe_coldwar",
 		],
 	},
 	"totoska": {
@@ -232,6 +246,8 @@ const NwfUsers = {
 			"eurasia2_great",
 			"worldNapoleon_winner",
 			"medcampaign1_great",
+			"euoeww2_global",
+			"pelopon_winner",
 		],
 		"events": [
 		    "euoemodern",
@@ -249,6 +265,8 @@ const NwfUsers = {
 			"eurasia2",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
+			"pelopon",
 		],
 	},
 	"ottomanism": {
@@ -269,6 +287,9 @@ const NwfUsers = {
 			"worldNapoleon_global",
 			"rpeuammodern_global",
 			"medcampaign1_global",
+			"euoeww2_super",
+			"pelopon_global",
+			"europe_coldwar_winner",
 		],
 		"events": [
 		    "crimeanwar",
@@ -282,6 +303,9 @@ const NwfUsers = {
 			"feudalismac",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
+			"pelopon",
+			"europe_coldwar",
 		],
 	},
 	"eggnog": {
@@ -327,6 +351,8 @@ const NwfUsers = {
 			"worldNapoleon_great",
 			"rpeuammodern_great",
 			"medcampaign1_great",
+			"euoeww2_great",
+			"pelopon_great",
 		],
 		"events": [
 		    "crimeanwar",
@@ -335,6 +361,8 @@ const NwfUsers = {
 			"worldNapoleon",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
+			"pelopon",
 		],
 	},
 	"graycar": {
@@ -374,9 +402,11 @@ const NwfUsers = {
 			"feudalismac_former",
 			"worldNapoleon_former",
 			"medcampaign1_super",
+			"euoeww2_winner",
 		],
 		"events": [
 		    "medcampaign1",
+			"euoeww2",
 		]
 	},
 	"pepper": {
@@ -415,12 +445,14 @@ const NwfUsers = {
 		    "worldNapoleon_great",
 			"rpeuammodern_super",
 			"medcampaign1_winner",
+			"euoeww2_former",
 		],
 		"events": [
 		    "deadhand",
 			"worldNapoleon",
 			"rpeuammodern",
 			"medcampaign1",
+			"euoeww2",
 		],
 	},
 	"castoktz": {
@@ -652,10 +684,12 @@ const NwfUsers = {
 		"gamename": "hanzen",
 		"awards": [
 		    "rpeuammodern_great",
+			"europe_coldwar_super",
 		],
 		"events": [
 		    "rpeuammodern",
 			"medcampaign1",
+			"europe_coldwar",
 		]
 	},
 	"lurus": {
@@ -665,11 +699,15 @@ const NwfUsers = {
 		"gamename": "Lurus",
 		"awards": [
 		    "medcampaign1_global",
+			"euoeww2_great",
+			"europe_coldwar_former",
 		],
 		"events": [
 		    "medcampaign1",
 			"firsteventp2",
 			"world_napoleon",
+			"euoeww2",
+			"europe_coldwar",
 		],
 	},
 	"trid": {
@@ -680,10 +718,12 @@ const NwfUsers = {
 		"awards": [
 		    "medcampaign1_great",
 			"crimeanwar_global",
+			"europe_coldwar_great",
 		],
 		"events": [
 		    "crimeanwar",
 			"medcampaign1",
+			"europe_coldwar",
 		],
 	},
 	"fordeum": {
@@ -1006,5 +1046,31 @@ const NwfEvents = {
 		name: 'Medieval RP campaign Day 3',
 		date: '09.11.2025',
 		img: 'medcampaign3.png',
+		canceled: true,
+	},
+	euoeww2: {
+		name: 'ERO WW2',
+		date: '09.11.2025',
+		img: 'euoeww2.png',
+	},
+	pelopon: {
+		name: 'Peloponessian War',
+		date: '23.11.2025',
+		map: 'pelo_greece_v1_peloponessian-war-en',
+	},
+	xp: {
+		name: 'XP event',
+		date: '29.11.2025',
+		img: 'xp29112025.png',
+	},
+	europe_coldwar: {
+		name: 'Historical Cold War',
+		date: '06.12.2025',
+		img: 'europe_coldwar.png',
+	},
+	pangea: {
+		name: 'Pangea',
+		date: '07.12.2025',
+		img: 'pangea.png',
 	},
 }
