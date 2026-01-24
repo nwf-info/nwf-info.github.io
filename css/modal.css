@@ -66,6 +66,7 @@
     display: flex;
     gap: 0.5rem;
     margin: 1rem;
+    flex-direction: column;
 }
 
 #modalMedalsList img {
@@ -83,4 +84,16 @@
     width: 30px;
     height: 30px;
     align-self: end;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.modalMedalItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.75rem;
+    color: white;
+    gap: 0.5rem;
 }

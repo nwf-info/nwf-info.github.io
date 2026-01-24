@@ -39,6 +39,8 @@ const NwfUsers = {
 			"euoeww2_global",
 			"pelopon_super",
 			"europe_coldwar_global",
+			"middleeast2_winner",
+			"usa2_super",
         ],
         "events": [
 		    "worldNapoleon",
@@ -212,8 +214,10 @@ const NwfUsers = {
 			"worldNapoleon_global",
 			"rpeuammodern_great",
 			"medcampaign1_global",
+			"medcampaign2_winner",
 			"euoeww2_super",
 			"europe_coldwar_global",
+			"usa2_winner",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -248,6 +252,7 @@ const NwfUsers = {
 			"medcampaign1_great",
 			"euoeww2_global",
 			"pelopon_winner",
+			"middleeast2_global",
 		],
 		"events": [
 		    "euoemodern",
@@ -290,6 +295,8 @@ const NwfUsers = {
 			"euoeww2_super",
 			"pelopon_global",
 			"europe_coldwar_winner",
+			"middleeast2_global",
+			"usa2_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -403,6 +410,7 @@ const NwfUsers = {
 			"worldNapoleon_former",
 			"medcampaign1_super",
 			"euoeww2_winner",
+			"middleeast2_super",
 		],
 		"events": [
 		    "medcampaign1",
@@ -446,6 +454,7 @@ const NwfUsers = {
 			"rpeuammodern_super",
 			"medcampaign1_winner",
 			"euoeww2_former",
+			"middleeast2_super",
 		],
 		"events": [
 		    "deadhand",
@@ -487,7 +496,9 @@ const NwfUsers = {
 		"discord": "Sjosten",
 		"discordid": "1190382734087041175",
 		"gamename": "Sjosten",
-		"awards": [],
+		"awards": [
+			"usa2_super",
+		],
 		"events": [
 		    "usa",
 			"eurasia3",
@@ -659,6 +670,7 @@ const NwfUsers = {
 			"africa_great",
 			"middleeast_global",
 			"eurasia1_great",
+			"middleeast2_great",
 		],
 		"events": [
 		    "medcampaign1",
@@ -685,6 +697,7 @@ const NwfUsers = {
 		"awards": [
 		    "rpeuammodern_great",
 			"europe_coldwar_super",
+			"usa2_great",
 		],
 		"events": [
 		    "rpeuammodern",
@@ -1073,4 +1086,35 @@ const NwfEvents = {
 		date: '07.12.2025',
 		img: 'pangea.png',
 	},
+	aotsm: {
+		name: 'Age of the Steam Machines',
+		date: '09.12.2025',
+		map: 'estebanf259_euromagnus_v1_aotsm-en',
+	},
+	middleeast2: {
+		name: 'Middle East 2',
+		date: '20.12.2025',
+		img: 'middleeast2.png',
+	},
+	zombie: {
+		name: 'Zombies event',
+		date: '21.12.2025',
+		img: 'zombie.png',
+		canceled: true,
+	},
+	interwar: {
+		name: 'Interwar',
+		date: '27.12.2025',
+		img: 'euad_interwar.png',
+	},
+	world2013: {
+		name: 'World 2013',
+		date: '11.01.2026',
+		img: 'world_2013.png',
+	},
+	usa2: {
+		name: 'USA 2',
+		date: '24.01.2026',
+		img: 'usa2.png',
+	}
 }

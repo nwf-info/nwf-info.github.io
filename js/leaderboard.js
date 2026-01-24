@@ -211,11 +211,15 @@ class Leaderboard {
                 medalsThisType.forEach(awardKey => {
                     const award = this.awards(awardKey);
                     if (award && NwfTypes[award.type]) { // Проверка существования типа
+                        const div = document.createElement('div');
                         const img = document.createElement('img');
                         img.src = `img/award/${award.type}.png`;
                         img.title = `${NwfTypes[award.type].name} ${NwfEvents[award.event]?.name || ''}`; // Проверка события
                         img.onclick = () => this.showAward(awardKey); // Исправлен вызов метода
-                        modalMedalsList.appendChild(img);
+                        div.appendChild(img);
+                        div.appendChild(document.createTextNode(NwfEvents[award.event]?.name || ''));
+                        div.className = 'modalMedalItem';
+                        modalMedalsList.appendChild(div);
                     }
                 });
             

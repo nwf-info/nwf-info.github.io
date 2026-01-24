@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // \--------------------------------------------/
 
         const players = document.createElement("p");
-        players.textContent = "Players: " + (data.players.length ? data.players.join(", ") : "-");
+        //players.textContent = "Players: " + (data.players.length ? data.players.join(", ") : "-");
         players.style.maxHeight = '35px';
         players.style.overflowY = 'auto';
         overlay.appendChild(players);
