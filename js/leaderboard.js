@@ -1,4 +1,4 @@
-class Leaderboard {
+class leaderboardNwf {
     constructor() {
         let isAwardsShort = false;
     }
@@ -293,16 +293,18 @@ class Leaderboard {
 
 // Инициализация после загрузки DOM
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Инициализация leaderboard...');
-    window.leaderboard = new Leaderboard(); // Исправлено имя класса
-    console.log('leaderboard инициализирован:', window.leaderboard);
+    console.log('Инициализация leaderboardNwf...');
+    window.leaderboardNwf = new leaderboardNwf(); // Исправлено имя класса
+    console.log('leaderboardNwf инициализирован:', window.leaderboardNwf);
 
-    if (window.innerWidth < window.innerHeight) {
-        window.leaderboard.isAwardsShort = true;
+    if (document.baseURI.includes('nwf')) {
+        if (window.innerWidth < window.innerHeight) {
+            window.leaderboardNwf.isAwardsShort = true;
+            document.getElementById('awardsMode').checked = true;
+        }
+        window.leaderboardNwf.isAwardsShort = true;
         document.getElementById('awardsMode').checked = true;
-    }
-    window.leaderboard.isAwardsShort = true;
-    document.getElementById('awardsMode').checked = true;
 
-    window.leaderboard.update();
+        window.leaderboardNwf.update();
+    }
 });
