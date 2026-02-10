@@ -7,8 +7,8 @@ const NwfUsers = {
         "awards": [
             "eurasiaModern_winner",
             "hre_winner",
-			"owbcaribean_winner",
-			"feudalismac_winner",
+			"owbcaribean_supreme",
+			"feudalismac_supreme",
 			"world1861_winner",
 			"eurasia6coalition_winner",
 			"worldww2_winner",
@@ -44,6 +44,8 @@ const NwfUsers = {
 			"better36_great",
 			"euro4modern2_super",
 			"nevada_super",
+			"pangea_super",
+			"peloponnesian_super",
         ],
         "events": [
 		    "worldNapoleon",
@@ -83,6 +85,7 @@ const NwfUsers = {
 			"better36",
 			"euro4modern2",
 			"nevada",
+			"pangea",
 		],
     },
 	"inka": {
@@ -107,6 +110,7 @@ const NwfUsers = {
 			"euoeww2_global",
 			"better36_global",
 			"nevada_former",
+			"pangea_great",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -128,6 +132,8 @@ const NwfUsers = {
 			"better36",
 			"nevada",
 			"euro4modern2",
+			"pangea",
+			"peloponnesian",
 		],
 	},
 	"napoleon": {
@@ -149,6 +155,7 @@ const NwfUsers = {
 			"africa_global",
 			"rpeuammodern_global",
 			"better36_super",
+			"pangea_global",
 		],
 		"events": [
 		    "hre",
@@ -166,6 +173,8 @@ const NwfUsers = {
 			"africa",
 			"medcampaign1",
 			"euro4modern2",
+			"pangea",
+			"peloponnesian",
 		],
 	},
 	"publicnuisance": {
@@ -200,6 +209,7 @@ const NwfUsers = {
 			"eurasiaModern",
 			"rpeuammodern",
 			"medcampaign1",
+			"peloponnesian",
 		],
 	},
 	"useless": {
@@ -222,7 +232,7 @@ const NwfUsers = {
 		"gamename": "EEnot",
 		"awards": [
 		    "eurasiaModern_super",
-			"euammodern_great",
+			"euammodern_former",
 			"worldNapoleon_global",
 			"rpeuammodern_great",
 			"medcampaign1_global",
@@ -271,6 +281,8 @@ const NwfUsers = {
 			"pelopon_winner",
 			"middleeast2_global",
 			"nevada_super",
+			"pangea_greatformer",
+			"peloponnesian_supreme",
 		],
 		"events": [
 		    "euoemodern",
@@ -291,6 +303,8 @@ const NwfUsers = {
 			"euoeww2",
 			"pelopon",
 			"nevada",
+			"pangea",
+			"peloponnesian",
 		],
 	},
 	"ottomanism": {
@@ -299,7 +313,7 @@ const NwfUsers = {
 		"discordid": "1283840564839579701",
 		"gamename": "Ottomanism",
 		"awards": [
-		    "crimeanwar_winner",
+		    "crimeanwar_supreme",
 			"eurasiaModern_super",
 			"hre_global",
 			"owbcaribean_global",
@@ -319,6 +333,8 @@ const NwfUsers = {
 			"better36_former",
 			"euro4modern2_supreme",
 			"nevada_global",
+			"pangea",
+			"peloponnesian_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -338,6 +354,8 @@ const NwfUsers = {
 			"better36",
 			"euro4modern2",
 			"nevada",
+			"pangea",
+			"peloponnesian",
 		],
 	},
 	"eggnog": {
@@ -370,6 +388,7 @@ const NwfUsers = {
 			"worldNapoleon",
 			"rpeuammodern",
 			"medcampaign1",
+			"peloponnesian",
 		],
 	},
 	"honse": {
@@ -386,6 +405,8 @@ const NwfUsers = {
 			"euoeww2_great",
 			"pelopon_great",
 			"better36_great",
+			"pangea_global",
+			"peloponnesian_great",
 		],
 		"events": [
 		    "crimeanwar",
@@ -397,6 +418,8 @@ const NwfUsers = {
 			"euoeww2",
 			"pelopon",
 			"better36",
+			"pangea",
+			"peloponnesian",
 		],
 	},
 	"graycar": {
@@ -436,7 +459,7 @@ const NwfUsers = {
 			"feudalismac_former",
 			"worldNapoleon_former",
 			"medcampaign1_super",
-			"euoeww2_winner",
+			"euoeww2_supreme",
 			"middleeast2_super",
 			"better36_winner",
 			"euro4modern2_greatformer",
@@ -456,7 +479,7 @@ const NwfUsers = {
 		"gamename": "Mrpepper",
 		"awards": [
 		    "worldkaiserreichp2_great",
-			"euammodern_great",
+			"euammodern_former",
 			"worldNapoleon_great",
 		],
 		"events": [
@@ -495,6 +518,7 @@ const NwfUsers = {
 			"medcampaign1",
 			"euoeww2",
 			"euro4modern2",
+			"peloponnesian",
 		],
 	},
 	"castoktz": {
@@ -711,9 +735,19 @@ const NwfUsers = {
 			"middleeast_global",
 			"eurasia1_great",
 			"middleeast2_great",
+			"pangea_great",
 		],
 		"events": [
 		    "medcampaign1",
+			"eurasia3",
+			"eurasia2",
+			"tigerland",
+			"historicalww1",
+			"africa",
+			"middleeast",
+			"eurasia1",
+			"middleeast2",
+			"pangea",
 		],
 	},
 	"steh": {
@@ -740,6 +774,7 @@ const NwfUsers = {
 			"usa2_great",
 			"better36_super",
 			"nevada_former",
+			"pangea_winner",
 		],
 		"events": [
 		    "rpeuammodern",
@@ -747,6 +782,8 @@ const NwfUsers = {
 			"europe_coldwar",
 			"nevada",
 			"euro4modern2",
+			"pangea",
+			"peloponnesian",
 		]
 	},
 	"lurus": {
@@ -760,6 +797,7 @@ const NwfUsers = {
 			"europe_coldwar_former",
 			"better36_global",
 			"nevada_great",
+			"pangea_global",
 		],
 		"events": [
 		    "medcampaign1",
@@ -769,6 +807,8 @@ const NwfUsers = {
 			"europe_coldwar",
 			"nevada",
 			"euro4modern2",
+			"pangea",
+			"peloponnesian",
 		],
 	},
 	"trid": {
@@ -916,6 +956,28 @@ const NwfUsers = {
 		"events": [
 	        "euro4modern2",
 			"middleeast2",
+		],
+	},
+	"justminecraft": {
+		"id": "justminecraft",
+		"discord": "justminecraftstuff",
+		"discordid": "922851212460716074",
+		"gamename": "justminecraftstuff",
+		"awards": [
+			"pangea_great",
+		],
+		"events": [
+	        "pangea",
+		],
+	},
+	"zerodeg": {
+		"id": "zerodeg",
+		"discord": "zerodeg",
+		"discordid": "1439038644198314005",
+		"gamename": "Zerodeg",
+		"awards": [],
+		"events": [
+	        "peloponnesian",
 		],
 	},
 };
@@ -1311,4 +1373,9 @@ const NwfEvents = {
 		date: '08.02.2026',
 		img: 'nevada.png',
 	},
+	peloponnesian: {
+		name: 'Peloponnesian War',
+		date: '23.11.2025',
+		img: 'peloponnesian.png',
+	}
 }
