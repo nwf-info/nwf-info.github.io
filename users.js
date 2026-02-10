@@ -127,6 +127,7 @@ const NwfUsers = {
 			"euoeww2",
 			"better36",
 			"nevada",
+			"euro4modern2",
 		],
 	},
 	"napoleon": {
@@ -164,7 +165,7 @@ const NwfUsers = {
 			"eurasia2",
 			"africa",
 			"medcampaign1",
-			
+			"euro4modern2",
 		],
 	},
 	"publicnuisance": {
@@ -242,6 +243,7 @@ const NwfUsers = {
 			"europe_coldwar",
 			"better36",
 			"nevada",
+			"euro4modern2",
 		],
 	},
 	"totoska": {
@@ -415,7 +417,7 @@ const NwfUsers = {
 		"discordid": "846351504730619925",
 		"gamename": "Moad",
 		"awards": [
-		    "ww1standard_winner",
+		    "ww1standard_supreme",
 			"worldww2_winner",
 			"paraguayanwar_winner",
 			"usa_winner",
@@ -492,6 +494,7 @@ const NwfUsers = {
 			"rpeuammodern",
 			"medcampaign1",
 			"euoeww2",
+			"euro4modern2",
 		],
 	},
 	"castoktz": {
@@ -551,7 +554,10 @@ const NwfUsers = {
 		"discordid": "866944111570583562",
 		"gamename": "Purple Magnet",
 		"awards": [
-		    "euro4modern",
+		    "euro4modern_global",
+			"ww1standard_global",
+			"owb_great",
+			"eurasia1_great",
 		],
 		"events": [
 		    "lanperna",
@@ -571,6 +577,8 @@ const NwfUsers = {
 			"WW2",
 			"og",
 			"rpeuammodern",
+			"owb",
+			"eurasia1",
 		],
 	},
 	"sinwrld": {
@@ -738,6 +746,7 @@ const NwfUsers = {
 			"medcampaign1",
 			"europe_coldwar",
 			"nevada",
+			"euro4modern2",
 		]
 	},
 	"lurus": {
@@ -759,6 +768,7 @@ const NwfUsers = {
 			"euoeww2",
 			"europe_coldwar",
 			"nevada",
+			"euro4modern2",
 		],
 	},
 	"trid": {
@@ -815,6 +825,7 @@ const NwfUsers = {
 		],
 		"events": [
 			"better36",
+			"euro4modern2",
 		],
 	},
 	"pierog": {
@@ -851,6 +862,55 @@ const NwfUsers = {
 		],
 		"events": [
 			"better36",
+			"euro4modern2",
+		],
+	},
+	"bernard": {
+		"id": "bernard",
+		"discord": "Bernard",
+		"discordid": "1324611249551441961",
+		"gamename": "Bernard",
+		"events": [
+	        "euro4modern2",
+			"nevada",
+			"aotsm",
+			"europe_coldwar",
+			"worldww2",
+		],
+		"awards": [
+			"worldww2_global",
+		],
+	},
+	"greg": {
+		"id": "greg",
+		"discord": "Aaaa",
+		"discordid": "1395745707247407124",
+		"gamename": "Greg",
+		"events": [
+	        "euro4modern2",
+			"nevada",
+			"better36",
+			"middleeast2",
+			"aotsm",
+		],
+	},
+	"breb": {
+		"id": "breb",
+		"discord": "breb",
+		"discordid": "1402946763492556843",
+		"gamename": "Breb",
+		"events": [
+	        "euro4modern2",
+		],
+	},
+	"promethean": {
+		"id": "promethean",
+		"discord": "Promethean",
+		"discordid": "1433767966696145040",
+		"gamename": "Promethean",
+		"events": [
+	        "euro4modern2",
+			"middleeast2",
 		],
 	},
 };
