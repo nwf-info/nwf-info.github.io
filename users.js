@@ -876,9 +876,11 @@ const NwfUsers = {
 			"aotsm",
 			"europe_coldwar",
 			"worldww2",
+			"paraguayanwar",
 		],
 		"awards": [
 			"worldww2_global",
+			"paraguayanwar_great",
 		],
 	},
 	"greg": {
