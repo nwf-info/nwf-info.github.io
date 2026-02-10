@@ -41,6 +41,9 @@ const NwfUsers = {
 			"europe_coldwar_global",
 			"middleeast2_winner",
 			"usa2_super",
+			"better36_great",
+			"euro4modern2_super",
+			"nevada_super",
         ],
         "events": [
 		    "worldNapoleon",
@@ -77,6 +80,9 @@ const NwfUsers = {
 			"euoeww2",
 			"pelopon",
 			"europe_coldwar",
+			"better36",
+			"euro4modern2",
+			"nevada",
 		],
     },
 	"inka": {
@@ -99,6 +105,8 @@ const NwfUsers = {
 			"hre_former",
 			"rpeuammodern_super",
 			"euoeww2_global",
+			"better36_global",
+			"nevada_former",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -117,6 +125,8 @@ const NwfUsers = {
 			"rpeuammodern",
 			"medcampaign1",
 			"euoeww2",
+			"better36",
+			"nevada",
 		],
 	},
 	"napoleon": {
@@ -137,6 +147,7 @@ const NwfUsers = {
 			"eurasia2_global",
 			"africa_global",
 			"rpeuammodern_global",
+			"better36_super",
 		],
 		"events": [
 		    "hre",
@@ -218,6 +229,8 @@ const NwfUsers = {
 			"euoeww2_super",
 			"europe_coldwar_global",
 			"usa2_winner",
+			"better36_great",
+			"nevada_great",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -227,6 +240,8 @@ const NwfUsers = {
 			"medcampaign1",
 			"euoeww2",
 			"europe_coldwar",
+			"better36",
+			"nevada",
 		],
 	},
 	"totoska": {
@@ -253,6 +268,7 @@ const NwfUsers = {
 			"euoeww2_global",
 			"pelopon_winner",
 			"middleeast2_global",
+			"nevada_super",
 		],
 		"events": [
 		    "euoemodern",
@@ -272,6 +288,7 @@ const NwfUsers = {
 			"medcampaign1",
 			"euoeww2",
 			"pelopon",
+			"nevada",
 		],
 	},
 	"ottomanism": {
@@ -297,6 +314,9 @@ const NwfUsers = {
 			"europe_coldwar_winner",
 			"middleeast2_global",
 			"usa2_global",
+			"better36_former",
+			"euro4modern2_supreme",
+			"nevada_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -313,6 +333,9 @@ const NwfUsers = {
 			"euoeww2",
 			"pelopon",
 			"europe_coldwar",
+			"better36",
+			"euro4modern2",
+			"nevada",
 		],
 	},
 	"eggnog": {
@@ -360,6 +383,7 @@ const NwfUsers = {
 			"medcampaign1_great",
 			"euoeww2_great",
 			"pelopon_great",
+			"better36_great",
 		],
 		"events": [
 		    "crimeanwar",
@@ -370,6 +394,7 @@ const NwfUsers = {
 			"medcampaign1",
 			"euoeww2",
 			"pelopon",
+			"better36",
 		],
 	},
 	"graycar": {
@@ -411,10 +436,15 @@ const NwfUsers = {
 			"medcampaign1_super",
 			"euoeww2_winner",
 			"middleeast2_super",
+			"better36_winner",
+			"euro4modern2_greatformer",
+			"nevada_supreme",
 		],
 		"events": [
 		    "medcampaign1",
 			"euoeww2",
+			"euro4modern2",
+			"nevada",
 		]
 	},
 	"pepper": {
@@ -498,6 +528,7 @@ const NwfUsers = {
 		"gamename": "Sjosten",
 		"awards": [
 			"usa2_super",
+			"euro4modern2_former",
 		],
 		"events": [
 		    "usa",
@@ -511,6 +542,7 @@ const NwfUsers = {
 			"eurasiaww2",
 			"euammodern",
 			"rpeuammodern",
+			"euro4modern2",
 		],
 	},
 	"purple": {
@@ -698,11 +730,14 @@ const NwfUsers = {
 		    "rpeuammodern_great",
 			"europe_coldwar_super",
 			"usa2_great",
+			"better36_super",
+			"nevada_former",
 		],
 		"events": [
 		    "rpeuammodern",
 			"medcampaign1",
 			"europe_coldwar",
+			"nevada",
 		]
 	},
 	"lurus": {
@@ -714,6 +749,8 @@ const NwfUsers = {
 		    "medcampaign1_global",
 			"euoeww2_great",
 			"europe_coldwar_former",
+			"better36_global",
+			"nevada_great",
 		],
 		"events": [
 		    "medcampaign1",
@@ -721,6 +758,7 @@ const NwfUsers = {
 			"world_napoleon",
 			"euoeww2",
 			"europe_coldwar",
+			"nevada",
 		],
 	},
 	"trid": {
@@ -732,11 +770,13 @@ const NwfUsers = {
 		    "medcampaign1_great",
 			"crimeanwar_global",
 			"europe_coldwar_great",
+			"euro4modern2_great",
 		],
 		"events": [
 		    "crimeanwar",
 			"medcampaign1",
 			"europe_coldwar",
+			"euro4modern2",
 		],
 	},
 	"fordeum": {
@@ -751,9 +791,79 @@ const NwfUsers = {
 		    "medcampaign1",
 		],
 	},
+	"theair": {
+		"id": "theair",
+		"discord": "theair0998",
+		"discordid": "1398840901412978760",
+		"gamename": "The Air",
+		"awards": [
+			"better36_super",
+			"euro4modern2_former",
+		],
+		"events": [
+			"better36",
+			"euro4modern2",
+		],
+	},
+	"seby": {
+		"id": "seby",
+		"discord": "Seby the Pendu",
+		"discordid": "1378695640304975943",
+		"gamename": "seby",
+		"awards": [
+			"better36_global",
+		],
+		"events": [
+			"better36",
+		],
+	},
+	"pierog": {
+		"id": "pierog",
+		"discord": "pierog",
+		"discordid": "1121112688777506946",
+		"gamename": "Pierog",
+		"awards": [
+			"better36_great",
+		],
+		"events": [
+			"better36",
+		],
+	},
+	"razdan": {
+		"id": "razdan",
+		"discord": "razdan2105",
+		"discordid": "1121112688777506946",
+		"gamename": "Razdan",
+		"awards": [
+			"better36_great",
+		],
+		"events": [
+			"better36",
+		],
+	},
+	"ace": {
+		"id": "ace",
+		"discord": "Ace-Frog",
+		"discordid": "1088785354699575366",
+		"gamename": "Ace",
+		"awards": [
+			"better36_former",
+		],
+		"events": [
+			"better36",
+		],
+	},
 };
 
 const NwfTypes = {
+	"global": {
+		score: 30,
+		name: "King of Earth! "
+	},
+	"supreme": {
+		score: 20,
+		name: "Supreme Ruler! "
+	},
     "winner": {
         score: 15,
         name: "Winner of Event! "
@@ -774,6 +884,10 @@ const NwfTypes = {
         score: 3,
         name: "Honorary Former Power, "
     },
+	"greatformer": {
+		score: 5,
+		name: "Honorary Former Power, "
+	},
 };
 
 const NwfEvents = {
@@ -1116,5 +1230,20 @@ const NwfEvents = {
 		name: 'USA 2',
 		date: '24.01.2026',
 		img: 'usa2.png',
-	}
+	},
+	better36: {
+		name: 'Better 36 Eurasia',
+		date: '31.01.2026',
+		img: 'better36.png',
+	},
+	euro4modern2: {
+		name: 'Euro4 Modern',
+		date: '07.02.2026',
+		img: 'euro4modern2.png',
+	},
+	nevada: {
+		name: 'Nevada',
+		date: '08.02.2026',
+		img: 'nevada.png',
+	},
 }
