@@ -888,6 +888,7 @@ const NwfUsers = {
 		"discord": "Aaaa",
 		"discordid": "1395745707247407124",
 		"gamename": "Greg",
+		"awards": [],
 		"events": [
 	        "euro4modern2",
 			"nevada",
@@ -901,6 +902,7 @@ const NwfUsers = {
 		"discord": "breb",
 		"discordid": "1402946763492556843",
 		"gamename": "Breb",
+		"awards": [],
 		"events": [
 	        "euro4modern2",
 		],
@@ -910,6 +912,7 @@ const NwfUsers = {
 		"discord": "Promethean",
 		"discordid": "1433767966696145040",
 		"gamename": "Promethean",
+		"awards": [],
 		"events": [
 	        "euro4modern2",
 			"middleeast2",
