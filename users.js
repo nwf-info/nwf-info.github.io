@@ -918,8 +918,8 @@ const NwfUsers = {
 };
 
 const NwfTypes = {
-	"global": {
-		score: 30,
+	"world": {
+		score: 35,
 		name: "King of Earth! "
 	},
 	"supreme": {
