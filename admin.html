@@ -8,6 +8,9 @@
         <script src="js/main.js"></script>
         <script src="js/admin.js"></script>
 
+        <script src="https://ee-apps.github.io/framework/eelibs/js/dropdown.js"></script>
+        <link rel="stylesheet" href="https://ee-apps.github.io/framework/eelibs/css/dropdown.css">
+
         <link rel="stylesheet" href="https://eeditor-ws.github.io/css/!.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/theme.css">
@@ -33,10 +36,11 @@
                     <button style="grid-area: d" id="saveChanges" class="save-btn">Save</button>
                     <button style="grid-area: e" id="resetChanges" class="secondary-btn">Cancel</button>
             </div>
+            <textarea id="textSaved"></textarea>
         </nav>
         <div class="content">
             <div class="admin-container">
-                <div class="auth-section" id="authSection">
+                <div class="auth-section hidden" id="authSection">
                     <h2>Authentification</h2>
                     <div class="input-group">
                         <input type="password" id="tokenInput" placeholder="Enter GitHub token">
@@ -44,12 +48,35 @@
                     </div>
                 </div>
 
-                <div class="editor-section hidden" id="editorSection">
+                <div class="editor-section" id="editorSection">
 
                     <div class="tab-content active" id="usersTab">
                         <h3>Users</h3>
                         <button class="add-btn" id="addUser">Add user</button>
-                        <div class="users-list" id="usersList"></div>
+                        <div id="choseUser"></div>
+                        <div id="useredit">
+                            <div class="ueform">
+                                <p>Id</p>
+                                <input type="text" id="userid" readonly>
+                            </div>
+                            <div class="ueform">
+                                <p>Name</p>
+                                <input type="text" id="username">
+                            </div>
+                            <div class="ueform">
+                                <p>Ingame name (unused)</p>
+                                <input type="text" id="usergame">
+                            </div>
+                            <div class="ueform">
+                                <p>Id of user in discord (numbers)</p>
+                                <input type="text" id="userdiscordid">
+                            </div>
+                        </div>
+                        <div id="userawards"></div>
+                        <button onclick="window.admin.giveAward(window.userChose.getValue())">+ award</button>
+                        <div id="userevents"></div>
+                        <button onclick="window.admin.giveEvent(window.userChose.getValue())">+ event</button>
+                        <div class="users-list" id="usersList" style="display: none;"></div>
                     </div>
 
                     <div class="tab-content" id="awardsTab">

@@ -99,9 +99,9 @@ class leaderboardNwf {
             tr.appendChild(tdDiscord);
 
             // Game name column
-            const tdGame = document.createElement('td');
+            /*const tdGame = document.createElement('td');
             tdGame.textContent = user.gamename || '';
-            tr.appendChild(tdGame);
+            tr.appendChild(tdGame);*/
 
             // Awards column
             const tdAwards = document.createElement('td');
