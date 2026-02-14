@@ -127,11 +127,12 @@ class leaderboardNwf {
 
                 // Теперь создаём div-блоки с иконкой и числом
                 Object.keys(awardCounts).forEach(type => {
-                    const awardData = awardCounts[type];
+                    console.log(type);
+                    const awardData = awardCounts[type] || [];
 
                     // создаём контейнер для награды
                     const awardDiv = document.createElement('div');
-                    awardDiv.classList.add('award-item'); // можно стилизовать через CSS
+                    awardDiv.classList.add('award-item');
                     awardDiv.style.display = 'inline-flex';
                     awardDiv.style.alignItems = 'center';
                     awardDiv.style.marginRight = '8px';
