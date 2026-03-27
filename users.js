@@ -90,7 +90,7 @@ const NwfUsers = {
 			"nevada",
 			"pangea",
 			"oeeuamodern",
-			"latemiddleages,
+			"latemiddleages",
 		],
     },
 	"inka": {
