@@ -499,7 +499,7 @@ const NwfUsers = {
 			"euro4modern2",
 			"nevada",
 			"oeeuamodern",
-		]
+		],
 	},
 	"pepper": {
 		"id": "pepper",
@@ -713,7 +713,7 @@ const NwfUsers = {
 			"novuscivilwar",
 			"feudalismac",
 			"eurasiaModern",
-		]
+		],
 	},
 	"ultron": {
 		"id": "ultron",
@@ -827,7 +827,7 @@ const NwfUsers = {
 			"oeeuamodern",
 			"latemiddleages",
 			"asiamodern",
-		]
+		],
 	},
 	"lurus": {
 		"id": "lurus",
