@@ -117,7 +117,6 @@ const NwfUsers = {
 			"nevada_former",
 			"pangea_great",
 			"oeeuamodern_great",
-			"oeeuamodern_great",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -141,7 +140,6 @@ const NwfUsers = {
 			"euro4modern2",
 			"pangea",
 			"peloponnesian",
-			"oeeuamodern",
 			"oeeuamodern",
 		],
 	},
