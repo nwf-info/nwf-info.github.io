@@ -46,6 +46,9 @@ const NwfUsers = {
 			"nevada_super",
 			"pangea_super",
 			"peloponnesian_super",
+			"oeeuamodern_supreme",
+			"latemiddleages_winner",
+			"asiamodern_super",
         ],
         "events": [
 		    "worldNapoleon",
@@ -86,6 +89,8 @@ const NwfUsers = {
 			"euro4modern2",
 			"nevada",
 			"pangea",
+			"oeeuamodern",
+			"latemiddleages,
 		],
     },
 	"inka": {
@@ -111,6 +116,8 @@ const NwfUsers = {
 			"better36_global",
 			"nevada_former",
 			"pangea_great",
+			"oeeuamodern_great",
+			"oeeuamodern_great",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -134,6 +141,8 @@ const NwfUsers = {
 			"euro4modern2",
 			"pangea",
 			"peloponnesian",
+			"oeeuamodern",
+			"oeeuamodern",
 		],
 	},
 	"napoleon": {
@@ -186,12 +195,14 @@ const NwfUsers = {
 		    "euoemodern_great",
 			"worldNapoleon_former",
 			"euoeww2_great",
+			"asiamodern_former",
 		],
 		"events": [
 		    "euomodern",
 			"worldNapoleon",
 			"medcampaign1",
 			"euoeww2",
+			"asiamodern",
 		],
 	},
 	"mrgoxlem": {
@@ -242,6 +253,7 @@ const NwfUsers = {
 			"usa2_winner",
 			"better36_great",
 			"nevada_great",
+			"oeeuamodern_global",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -254,6 +266,7 @@ const NwfUsers = {
 			"better36",
 			"nevada",
 			"euro4modern2",
+			"oeeuamodern",
 		],
 	},
 	"totoska": {
@@ -283,6 +296,8 @@ const NwfUsers = {
 			"nevada_super",
 			"pangea_greatformer",
 			"peloponnesian_supreme",
+			"oeeuamodern_global",
+			"asiamodern_super",
 		],
 		"events": [
 		    "euoemodern",
@@ -305,6 +320,8 @@ const NwfUsers = {
 			"nevada",
 			"pangea",
 			"peloponnesian",
+			"oeeuamodern",
+			"asiamodern",
 		],
 	},
 	"ottomanism": {
@@ -335,6 +352,8 @@ const NwfUsers = {
 			"nevada_global",
 			"pangea",
 			"peloponnesian_global",
+			"latemiddleages_global",
+			"asiamodern_global",
 		],
 		"events": [
 		    "crimeanwar",
@@ -356,6 +375,8 @@ const NwfUsers = {
 			"nevada",
 			"pangea",
 			"peloponnesian",
+			"latemiddleages",
+			"asiamodern",
 		],
 	},
 	"eggnog": {
@@ -407,6 +428,9 @@ const NwfUsers = {
 			"better36_great",
 			"pangea_global",
 			"peloponnesian_great",
+			"oeeuamodern_former",
+			"latemiddleages_global",
+			"asiamodern_former",
 		],
 		"events": [
 		    "crimeanwar",
@@ -420,6 +444,9 @@ const NwfUsers = {
 			"better36",
 			"pangea",
 			"peloponnesian",
+			"oeeuamodern",
+			"latemiddleages",
+			"asiamodern",
 		],
 	},
 	"graycar": {
@@ -464,12 +491,14 @@ const NwfUsers = {
 			"better36_winner",
 			"euro4modern2_greatformer",
 			"nevada_supreme",
+			"oeeuamodern_super",
 		],
 		"events": [
 		    "medcampaign1",
 			"euoeww2",
 			"euro4modern2",
 			"nevada",
+			"oeeuamodern",
 		]
 	},
 	"pepper": {
@@ -529,6 +558,7 @@ const NwfUsers = {
 		"awards": [
 		    "tigerland_great",
 			"historicalww1_great",
+			"asiamodern_former",
 		],
 		"events": [
 		    "middleeast",
@@ -546,6 +576,7 @@ const NwfUsers = {
 			"constantinople",
 			"WW2",
 			"worldNapoleon",
+			"asiamodern",
 		],
 	},
 	"sjosten": {
@@ -556,6 +587,9 @@ const NwfUsers = {
 		"awards": [
 			"usa2_super",
 			"euro4modern2_former",
+			"oeeuamodern_great",
+			"latemiddleages_super",
+			"asiamodern_winner",
 		],
 		"events": [
 		    "usa",
@@ -570,6 +604,9 @@ const NwfUsers = {
 			"euammodern",
 			"rpeuammodern",
 			"euro4modern2",
+			"oeeuamodern",
+			"latemiddleages",
+			"asiamodern",
 		],
 	},
 	"purple": {
@@ -775,6 +812,9 @@ const NwfUsers = {
 			"better36_super",
 			"nevada_former",
 			"pangea_winner",
+			"oeeuamodern_great",
+			"latemiddleages_former",
+			"asiamodern_great",
 		],
 		"events": [
 		    "rpeuammodern",
@@ -784,6 +824,9 @@ const NwfUsers = {
 			"euro4modern2",
 			"pangea",
 			"peloponnesian",
+			"oeeuamodern",
+			"latemiddleages",
+			"asiamodern",
 		]
 	},
 	"lurus": {
@@ -849,10 +892,16 @@ const NwfUsers = {
 		"awards": [
 			"better36_super",
 			"euro4modern2_former",
+			"oeeuamodern_great",
+			"latemiddleages_former",
+			"asiamodern_global",
 		],
 		"events": [
 			"better36",
 			"euro4modern2",
+			"oeeuamodern",
+			"latemiddleages",
+			"asiamodern",
 		],
 	},
 	"seby": {
@@ -887,9 +936,11 @@ const NwfUsers = {
 		"gamename": "Razdan",
 		"awards": [
 			"better36_great",
+			"latemiddleages_great",
 		],
 		"events": [
 			"better36",
+			"latemiddleages",
 		],
 	},
 	"ace": {
@@ -917,10 +968,12 @@ const NwfUsers = {
 			"europe_coldwar",
 			"worldww2",
 			"paraguayanwar",
+			"oeeuamodern",
 		],
 		"awards": [
 			"worldww2_global",
 			"paraguayanwar_great",
+			"oeeuamodern_former",
 		],
 	},
 	"greg": {
@@ -928,13 +981,18 @@ const NwfUsers = {
 		"discord": "Aaaa",
 		"discordid": "1395745707247407124",
 		"gamename": "Greg",
-		"awards": [],
+		"awards": [
+			"oeeuamodern_global",
+			"latemiddleages_former",
+		],
 		"events": [
 	        "euro4modern2",
 			"nevada",
 			"better36",
 			"middleeast2",
 			"aotsm",
+			"oeeuamodern",
+			"latemiddleages",
 		],
 	},
 	"breb": {
@@ -1377,5 +1435,20 @@ const NwfEvents = {
 		name: 'Peloponnesian War',
 		date: '23.11.2025',
 		img: 'peloponnesian.png',
-	}
+	},
+	oeeuamodern: {
+	    name: 'Oe Eurasia Modern',
+		date: '22.02.2026',
+		img: 'oeeuamodern.png',
+	},
+	latemiddleages: {
+		name: 'Late Middle Ages',
+		date: '28.02.2026',
+		img: 'latemiddleages.png',
+	},
+	asiamodern: {
+		name: 'Asia Modern',
+		date: '07.03.2026',
+		img: 'asiamodern.png',
+	},
 }
