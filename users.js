@@ -49,6 +49,7 @@ const NwfUsers = {
 			"oeeuamodern_supreme",
 			"latemiddleages_winner",
 			"asiamodern_super",
+			"europe1400_global",
         ],
         "events": [
 		    "worldNapoleon",
@@ -252,6 +253,7 @@ const NwfUsers = {
 			"better36_great",
 			"nevada_great",
 			"oeeuamodern_global",
+			"europe1400_winner",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -429,6 +431,7 @@ const NwfUsers = {
 			"oeeuamodern_former",
 			"latemiddleages_global",
 			"asiamodern_former",
+			"europe1400_great",
 		],
 		"events": [
 		    "crimeanwar",
@@ -490,6 +493,7 @@ const NwfUsers = {
 			"euro4modern2_greatformer",
 			"nevada_supreme",
 			"oeeuamodern_super",
+			"europe1400_greatformer",
 		],
 		"events": [
 		    "medcampaign1",
@@ -537,6 +541,7 @@ const NwfUsers = {
 			"medcampaign1_winner",
 			"euoeww2_former",
 			"middleeast2_super",
+			"europe1400_super",
 		],
 		"events": [
 		    "deadhand",
@@ -546,6 +551,8 @@ const NwfUsers = {
 			"euoeww2",
 			"euro4modern2",
 			"peloponnesian",
+			"middleeast2",
+			"europe1400",
 		],
 	},
 	"castoktz": {
@@ -557,6 +564,7 @@ const NwfUsers = {
 		    "tigerland_great",
 			"historicalww1_great",
 			"asiamodern_former",
+			"europe1400_great",
 		],
 		"events": [
 		    "middleeast",
@@ -588,6 +596,7 @@ const NwfUsers = {
 			"oeeuamodern_great",
 			"latemiddleages_super",
 			"asiamodern_winner",
+			"europe1400_super",
 		],
 		"events": [
 		    "usa",
@@ -893,6 +902,7 @@ const NwfUsers = {
 			"oeeuamodern_great",
 			"latemiddleages_former",
 			"asiamodern_global",
+			"europe1400_former",
 		],
 		"events": [
 			"better36",
@@ -935,6 +945,7 @@ const NwfUsers = {
 		"awards": [
 			"better36_great",
 			"latemiddleages_great",
+			"europe1400_great",
 		],
 		"events": [
 			"better36",
@@ -982,6 +993,7 @@ const NwfUsers = {
 		"awards": [
 			"oeeuamodern_global",
 			"latemiddleages_former",
+			"europe1400_global",
 		],
 		"events": [
 	        "euro4modern2",
@@ -1448,5 +1460,10 @@ const NwfEvents = {
 		name: 'Asia Modern',
 		date: '07.03.2026',
 		img: 'asiamodern.png',
+	},
+	europe1400: {
+		name: 'Classic Europe 1400',
+		date: '29.03.2026',
+		img: 'europe1400.png',
 	},
 }
