@@ -67,6 +67,7 @@ class leaderboardNwf {
             // Score column
             const tdScore = document.createElement('td');
             tdScore.textContent = user.score;
+            tdScore.className = 'topleftcolumn';
             tr.appendChild(tdScore);
             
             // Ratio column - исправлен расчет
