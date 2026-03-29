@@ -73,8 +73,24 @@
         height: 48px;
     }
 
+    .awardslist {
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: var(--br);
+        background-color: var(--background-secondary);
+    }
+
     .awardslist img {
         width: 48px;
         height: 48px;
+    }
+
+    .list-container {
+        height: calc(100dvh - 5rem - 32px - 48px);
+    }
+
+    body {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
