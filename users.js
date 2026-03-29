@@ -1071,6 +1071,10 @@ const NwfTypes = {
         score: 5,
         name: "Global Power, "
     },
+	"greatformer": {
+		score: 5,
+		name: "Great Former Power, "
+	},
     "great": {
         score: 3,
         name: "Great Power, "
@@ -1079,10 +1083,6 @@ const NwfTypes = {
         score: 3,
         name: "Honorary Former Power, "
     },
-	"greatformer": {
-		score: 5,
-		name: "Honorary Former Power, "
-	},
 };
 
 const NwfEvents = {
