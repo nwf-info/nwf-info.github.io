@@ -50,6 +50,13 @@ const NwfUsers = {
 			"latemiddleages_winner",
 			"asiamodern_super",
 			"europe1400_global",
+			"austriahungary1914_winner",
+			"thirdworldrising_global",
+			"world1444_super",
+			"euroamerica1590_super",
+			"balkans1444_supreme",
+			"worldwar22_global",
+			"europe1900_former",
         ],
         "events": [
 		    "worldNapoleon",
@@ -92,6 +99,13 @@ const NwfUsers = {
 			"pangea",
 			"oeeuamodern",
 			"latemiddleages",
+			"austriahungary1914",
+			"thirdworldrising",
+			"world1444",
+			"euroamerica1590",
+			"balkans1444",
+			"worldwar22",
+			"europe1900",
 		],
     },
 	"inka": {
@@ -118,6 +132,10 @@ const NwfUsers = {
 			"nevada_former",
 			"pangea_great",
 			"oeeuamodern_great",
+			"euroamerica1590_super",
+			"balkans1444_former",
+			"worldwar22_former",
+			"europe1900_global",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -142,6 +160,11 @@ const NwfUsers = {
 			"pangea",
 			"peloponnesian",
 			"oeeuamodern",
+			"austriahungary1914",
+			"euroamerica1590",
+			"balkans1444",
+			"worldwar22",
+			"europe1900",
 		],
 	},
 	"napoleon": {
@@ -254,6 +277,7 @@ const NwfUsers = {
 			"nevada_great",
 			"oeeuamodern_global",
 			"europe1400_winner",
+			"austriahungary1914_super",
 		],
 		"events": [
 		    "eurasiaModern",
@@ -267,6 +291,8 @@ const NwfUsers = {
 			"nevada",
 			"euro4modern2",
 			"oeeuamodern",
+			"austriahungary1914",
+			"world1444",
 		],
 	},
 	"totoska": {
@@ -298,6 +324,8 @@ const NwfUsers = {
 			"peloponnesian_supreme",
 			"oeeuamodern_global",
 			"asiamodern_super",
+			"world1444_super",
+			"worldwar22_former",
 		],
 		"events": [
 		    "euoemodern",
@@ -322,6 +350,9 @@ const NwfUsers = {
 			"peloponnesian",
 			"oeeuamodern",
 			"asiamodern",
+			"world1444",
+			"worldwar22",
+			"europe1900",
 		],
 	},
 	"ottomanism": {
@@ -354,6 +385,9 @@ const NwfUsers = {
 			"peloponnesian_global",
 			"latemiddleages_global",
 			"asiamodern_global",
+			"balkans1444_former",
+			"worldwar22_greatformer",
+			"europe1900_supreme",
 		],
 		"events": [
 		    "crimeanwar",
@@ -377,6 +411,10 @@ const NwfUsers = {
 			"peloponnesian",
 			"latemiddleages",
 			"asiamodern",
+			"euroamerica1590",
+			"balkans1444",
+			"worldwar22",
+			"europe1900",
 		],
 	},
 	"eggnog": {
@@ -392,6 +430,7 @@ const NwfUsers = {
 			"crimeanwar_former",
 			"rpeuammodern_global",
 			"medcampaign1_great",
+			"world1444_global",
 		],
 		"events": [
 		    "ussr",
@@ -410,6 +449,7 @@ const NwfUsers = {
 			"rpeuammodern",
 			"medcampaign1",
 			"peloponnesian",
+			"world1444",
 		],
 	},
 	"honse": {
@@ -432,6 +472,7 @@ const NwfUsers = {
 			"latemiddleages_global",
 			"asiamodern_former",
 			"europe1400_great",
+			"thirdworldrising_super",
 		],
 		"events": [
 		    "crimeanwar",
@@ -448,6 +489,8 @@ const NwfUsers = {
 			"oeeuamodern",
 			"latemiddleages",
 			"asiamodern",
+			"austriahungary1914",
+			"thirdworldrising",
 		],
 	},
 	"graycar": {
@@ -494,6 +537,8 @@ const NwfUsers = {
 			"nevada_supreme",
 			"oeeuamodern_super",
 			"europe1400_greatformer",
+			"worldwar22_supreme",
+			"europe1900_global",
 		],
 		"events": [
 		    "medcampaign1",
@@ -501,6 +546,10 @@ const NwfUsers = {
 			"euro4modern2",
 			"nevada",
 			"oeeuamodern",
+			"austriahungary1914",
+			"euroamerica1590",
+			"worldwar22",
+			"europe1900",
 		],
 	},
 	"pepper": {
@@ -512,6 +561,7 @@ const NwfUsers = {
 		    "worldkaiserreichp2_great",
 			"euammodern_former",
 			"worldNapoleon_great",
+			"worldwar22_super",
 		],
 		"events": [
 		    "worldww2",
@@ -528,6 +578,7 @@ const NwfUsers = {
 			"deadhand",
 			"worldNapoleon",
 			"medcampaign1",
+			"worldwar22",
 		],
 	},
 	"psycho": {
@@ -542,6 +593,8 @@ const NwfUsers = {
 			"euoeww2_former",
 			"middleeast2_super",
 			"europe1400_super",
+			"thirdworldrising_supreme",
+			"world1444_winner",
 		],
 		"events": [
 		    "deadhand",
@@ -553,6 +606,9 @@ const NwfUsers = {
 			"peloponnesian",
 			"middleeast2",
 			"europe1400",
+			"austriahungary1914",
+			"thirdworldrising",
+			"world1444",
 		],
 	},
 	"castoktz": {
@@ -583,6 +639,7 @@ const NwfUsers = {
 			"WW2",
 			"worldNapoleon",
 			"asiamodern",
+			"thirdworldrising",
 		],
 	},
 	"sjosten": {
@@ -597,6 +654,10 @@ const NwfUsers = {
 			"latemiddleages_super",
 			"asiamodern_winner",
 			"europe1400_super",
+			"thirdworldrising_greatformer",
+			"euroamerica1590_supreme",
+			"worldwar22_former",
+			"europe1900_super",
 		],
 		"events": [
 		    "usa",
@@ -614,6 +675,12 @@ const NwfUsers = {
 			"oeeuamodern",
 			"latemiddleages",
 			"asiamodern",
+			"austriahungary1914",
+			"thirdworldrising",
+			"world1444",
+			"euroamerica1590",
+			"worldwar22",
+			"europe1900",
 		],
 	},
 	"purple": {
@@ -734,6 +801,8 @@ const NwfUsers = {
 			"ussr_global",
 			"eurasia2_winner",
 			"eurasia1_global",
+			"thirdworldrising_former",
+			"world1444_great",
 		],
 		"events": [
 		    "middleeast",
@@ -763,6 +832,10 @@ const NwfUsers = {
 			"usa_civilwar",
 			"ottoman_win_ww1",
 			"euammodern",
+			"austriahungary1914",
+			"thirdworldrising",
+			"world1444",
+			"euroamerica1590",
 		],
 	},
 	"eclipse": {
@@ -792,6 +865,7 @@ const NwfUsers = {
 			"eurasia1",
 			"middleeast2",
 			"pangea",
+			"europe1900",
 		],
 	},
 	"steh": {
@@ -834,6 +908,7 @@ const NwfUsers = {
 			"oeeuamodern",
 			"latemiddleages",
 			"asiamodern",
+			"europe1900",
 		],
 	},
 	"lurus": {
@@ -903,6 +978,10 @@ const NwfUsers = {
 			"latemiddleages_former",
 			"asiamodern_global",
 			"europe1400_former",
+			"austriahungary1914_global",
+			"euroamerica1590_former",
+			"worldwar22_former",
+			"europe1900_great",
 		],
 		"events": [
 			"better36",
@@ -910,6 +989,12 @@ const NwfUsers = {
 			"oeeuamodern",
 			"latemiddleages",
 			"asiamodern",
+			"austriahungary1914",
+			"thirdworldrising",
+			"euroamerica1590",
+			"balkans1444",
+			"worldwar22",
+			"europe1900",
 		],
 	},
 	"seby": {
@@ -946,10 +1031,13 @@ const NwfUsers = {
 			"better36_great",
 			"latemiddleages_great",
 			"europe1400_great",
+			"balkans1444_global",
 		],
 		"events": [
 			"better36",
 			"latemiddleages",
+			"balkans1444",
+			"europe1900",
 		],
 	},
 	"ace": {
@@ -978,11 +1066,18 @@ const NwfUsers = {
 			"worldww2",
 			"paraguayanwar",
 			"oeeuamodern",
+			"thirdworldrising",
+			"balkans1444",
+			"worldwar22",
+			"europe1900",
 		],
 		"awards": [
 			"worldww2_global",
 			"paraguayanwar_great",
 			"oeeuamodern_former",
+			"balkans1444_great",
+			"worldwar22_former",
+			"europe1900_former",
 		],
 	},
 	"greg": {
@@ -994,6 +1089,10 @@ const NwfUsers = {
 			"oeeuamodern_global",
 			"latemiddleages_former",
 			"europe1400_global",
+			"austriahungary1914_super",
+			"world1444_super",
+			"euroamerica1590_super",
+			"europe1900_greatformer",
 		],
 		"events": [
 	        "euro4modern2",
@@ -1003,6 +1102,11 @@ const NwfUsers = {
 			"aotsm",
 			"oeeuamodern",
 			"latemiddleages",
+			"austriahungary1914",
+			"world1444",
+			"euroamerica1590",
+			"balkans1444",
+			"europe1900",
 		],
 	},
 	"breb": {
@@ -1048,6 +1152,89 @@ const NwfUsers = {
 	        "peloponnesian",
 		],
 	},
+	"zamir12": {
+		"id": "zamir12",
+		"discord": "zamir12",
+		"gamename": "zamir12",
+		"awards": [
+		    "austriahungary1914_great",
+		],
+		"events": [
+		    "austriahungary1914",
+		]
+	},
+	"masked_terror": {
+		"id": "masked_terror",
+		"discord": "samuelsmith0021",
+		"gamename": "Masked Terror",
+		"discordid": "1435397066913484963",
+		"awards": [
+		    "austriahungary1914_great",
+		],
+		"events": [
+		    "austriahungary1914",
+		],
+	},
+	"stolenroad": {
+		"id": "stolenroad",
+		"discord": "StolenRoad",
+		"gamename": "StolenRoad",
+		"discordid": "950707094229766174",
+		"awards": [
+		    "thirdworldrising_global",
+		],
+		"events": [
+		    "thirdworldrising",
+		],
+	},
+	"usc": {
+		"id": "usc",
+		"discord": "untitledscaredycat",
+		"gamename": "USC",
+		"discordid": "1431788304491216946",
+		"awards": [
+		    "thirdworldrising_cheater",
+			"euroamerica1590_former",
+			"balkans1444_great",
+			"europe1900_former",
+		],
+		events": [
+		    "thirdworldrising",
+			"euroamerica1590",
+			"balkans1444",
+			"europe1900",
+		]
+	},
+	"exi": {
+		"id": "exi",
+		"discord": "exi_v",
+		"gamename": "exi"<
+		"discordid": "1457156918152794268",
+		"awards": [
+		    "world1444_great",
+			"euroamerica1590_global",
+		],
+		"events": [
+		    "world1444",
+			"euroamerica1590",
+		]
+	}
+	"mali": {
+		"id": "mali"
+		"discord": "theuniquegermanball.",
+		"discordid": "1377666909146976276",
+		"gamename": "MaliCH",
+		"awards": [
+		    "balkans1444_great",
+			"worldwar22_former",
+			"europe1900_great",
+		],
+		"events": [
+		    "balkans1444",
+			"worldwar22",
+			"europe1900",
+		]
+	}
 };
 
 const NwfTypes = {
@@ -1465,5 +1652,55 @@ const NwfEvents = {
 		name: 'Classic Europe 1400',
 		date: '29.03.2026',
 		img: 'europe1400.png',
+	},
+	austriahungary1914: {
+		name: 'Austria Hungary 1914',
+		date: '21.04.2026',
+		img: 'austriahungary1914.png',
+	},
+	thirdworldrising: {
+		name: 'Third World Rising',
+		date: '02.05.2026',
+		img: 'thirdworldrising.png',
+	},
+	world1444: {
+		name: 'World 1444',
+		date: '03.05.2026',
+		img: 'world1444.png',
+	},
+	euroamerica1590: {
+		name: 'Americas 1590',
+		date: '31.05.2026',
+		img: 'euroamerica1590.png',
+	},
+	worldwar22: {
+		name: 'World War II',
+		date: '01.08.2026',
+		img: 'worldwar22.png',
+	},
+	balkans1444: {
+		name: 'Balkans 1444',
+		date: '02.08.2026',
+		img: 'balkans1444.png',
+	},
+	europe1900: {
+		name: 'Europe 1900',
+		date: '09.08.2026',
+		img: 'europe1900.png',
+	},
+	rpeurasia: {
+		name: 'Rp Eurasia',
+		date: '22.08.2026',
+		img: 'rpeurasia.png',
+	},
+	eurohlebmodern: {
+		name: 'EuroHLEB Modern',
+		date: '15.08.2026',
+		img: 'eurohlebmodern.png',
+	},
+	imperatorrome: {
+		name: 'Rome',
+		date: '16.08.2026',
+		img: 'imperatorrome.png',
 	},
 }
