@@ -1208,7 +1208,7 @@ const NwfUsers = {
 	"exi": {
 		"id": "exi",
 		"discord": "exi_v",
-		"gamename": "exi"
+		"gamename": "exi",
 		"discordid": "1457156918152794268",
 		"awards": [
 		    "world1444_great",
