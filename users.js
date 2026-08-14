@@ -1198,7 +1198,7 @@ const NwfUsers = {
 			"balkans1444_great",
 			"europe1900_former",
 		],
-		events": [
+		"events": [
 		    "thirdworldrising",
 			"euroamerica1590",
 			"balkans1444",
@@ -1208,7 +1208,7 @@ const NwfUsers = {
 	"exi": {
 		"id": "exi",
 		"discord": "exi_v",
-		"gamename": "exi"<
+		"gamename": "exi"
 		"discordid": "1457156918152794268",
 		"awards": [
 		    "world1444_great",
@@ -1220,7 +1220,7 @@ const NwfUsers = {
 		]
 	},
 	"mali": {
-		"id": "mali"
+		"id": "mali",
 		"discord": "theuniquegermanball.",
 		"discordid": "1377666909146976276",
 		"gamename": "MaliCH",
