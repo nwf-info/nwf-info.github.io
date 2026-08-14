@@ -1218,7 +1218,7 @@ const NwfUsers = {
 		    "world1444",
 			"euroamerica1590",
 		]
-	}
+	},
 	"mali": {
 		"id": "mali"
 		"discord": "theuniquegermanball.",
