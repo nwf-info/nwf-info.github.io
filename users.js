@@ -569,7 +569,6 @@ const NwfUsers = {
 		    "worldkaiserreichp2_great",
 			"euammodern_former",
 			"worldNapoleon_great",
-			"worldwar22_super",
 		],
 		"events": [
 		    "worldww2",
@@ -586,7 +585,6 @@ const NwfUsers = {
 			"deadhand",
 			"worldNapoleon",
 			"medcampaign1",
-			"worldwar22",
 		],
 	},
 	"psycho": {
@@ -1209,12 +1207,14 @@ const NwfUsers = {
 			"euroamerica1590_former",
 			"balkans1444_great",
 			"europe1900_former",
+			"worldwar22_super",
 		],
 		"events": [
 		    "thirdworldrising",
 			"euroamerica1590",
 			"balkans1444",
 			"europe1900",
+			"worldwar22",
 		]
 	},
 	"exi": {
