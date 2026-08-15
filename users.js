@@ -57,6 +57,7 @@ const NwfUsers = {
 			"balkans1444_supreme",
 			"worldwar22_global",
 			"europe1900_former",
+			"eurohlebmodern_winner",
         ],
         "events": [
 		    "worldNapoleon",
@@ -106,6 +107,7 @@ const NwfUsers = {
 			"balkans1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
     },
 	"inka": {
@@ -165,6 +167,7 @@ const NwfUsers = {
 			"balkans1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"napoleon": {
@@ -326,6 +329,7 @@ const NwfUsers = {
 			"asiamodern_super",
 			"world1444_super",
 			"worldwar22_former",
+			"eurohlebmodern_super",
 		],
 		"events": [
 		    "euoemodern",
@@ -353,6 +357,7 @@ const NwfUsers = {
 			"world1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"ottomanism": {
@@ -388,6 +393,7 @@ const NwfUsers = {
 			"balkans1444_former",
 			"worldwar22_greatformer",
 			"europe1900_supreme",
+			"eurohlebmodern_winner",
 		],
 		"events": [
 		    "crimeanwar",
@@ -415,6 +421,7 @@ const NwfUsers = {
 			"balkans1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"eggnog": {
@@ -550,6 +557,7 @@ const NwfUsers = {
 			"euroamerica1590",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"pepper": {
@@ -681,6 +689,7 @@ const NwfUsers = {
 			"euroamerica1590",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"purple": {
@@ -995,6 +1004,7 @@ const NwfUsers = {
 			"balkans1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"seby": {
@@ -1070,6 +1080,7 @@ const NwfUsers = {
 			"balkans1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
 		],
 		"awards": [
 			"worldww2_global",
@@ -1107,6 +1118,7 @@ const NwfUsers = {
 			"euroamerica1590",
 			"balkans1444",
 			"europe1900",
+			"eurohlebmodern",
 		],
 	},
 	"breb": {
@@ -1228,11 +1240,25 @@ const NwfUsers = {
 		    "balkans1444_great",
 			"worldwar22_former",
 			"europe1900_great",
+			"eurohlebmodern_global",
 		],
 		"events": [
 		    "balkans1444",
 			"worldwar22",
 			"europe1900",
+			"eurohlebmodern",
+		]
+	},
+	"leaderpenguin": {
+		"id": "leaderpenguin",
+		"discord": "leaderpinguin",
+		"discordid": "1523801709090963547",
+		"gamename": "Leader Penguin",
+		"awards": [
+		    "eurohlebmodern_global",
+		],
+		"events": [
+		    "eurohlebmodern",
 		]
 	}
 };
