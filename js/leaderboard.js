@@ -30,7 +30,7 @@ class leaderboardNwf {
                 score += this.calcScoreAward(award);
             });
             return { ...user, score };
-        });
+        }).filter(user => user.score >= 10);
 
         // Sort users by ratio (highest first)
         usersArray.sort((a, b) => {
