@@ -58,6 +58,12 @@ const NwfUsers = {
 			"worldwar22_global",
 			"europe1900_former",
 			"eurohlebmodern_winner",
+			"imperatorrome_supreme",
+			"austroprussianwar_global",
+			"sweden_world",
+			"moderneuro4_supreme",
+			"deadhand2_great",
+			"springofnationseuro4_winner",
         ],
         "events": [
 		    "worldNapoleon",
@@ -108,6 +114,13 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"imperatorrome",
+			"americancivilwar",
+			"austroprussianwar",
+			"sweden",
+			"moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
 		],
     },
 	"inka": {
@@ -138,6 +151,11 @@ const NwfUsers = {
 			"balkans1444_former",
 			"worldwar22_former",
 			"europe1900_global",
+			"imperatorrome_former",
+			"austroprussianwar_former",
+			"moderneuro4_global",
+			"deadhand2_great",
+			"springofnationseuro4_former",
 		],
 		"events": [
 		    "worldNapoleon",
@@ -168,6 +186,11 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"imperatorrome",
+			"americancivilwar",
+			"austroprussianwar",
+			"deadhand2",
+			"springofnationseuro4",
 		],
 	},
 	"napoleon": {
@@ -330,6 +353,8 @@ const NwfUsers = {
 			"world1444_super",
 			"worldwar22_former",
 			"eurohlebmodern_super",
+			"interwareurasia_supreme",
+			"deadhand2_super",
 		],
 		"events": [
 		    "euoemodern",
@@ -358,6 +383,8 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"interwareurasia",
+			"deadhand2",
 		],
 	},
 	"ottomanism": {
@@ -394,6 +421,13 @@ const NwfUsers = {
 			"worldwar22_greatformer",
 			"europe1900_supreme",
 			"eurohlebmodern_winner",
+			"imperatorrome_super",
+			"americancivilwar_global",
+			"interwareurasia_former",
+			"sweden_greatformer",
+			"moderneuro4_greatformer",
+			"deadhand2_winner",
+			"springofnationseuro4_super",
 		],
 		"events": [
 		    "crimeanwar",
@@ -422,6 +456,13 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"imperatorrome",
+			"americancivilwar",
+			"interwareurasia",
+			"sweden",
+			"moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
 		],
 	},
 	"eggnog": {
@@ -546,6 +587,7 @@ const NwfUsers = {
 			"europe1400_greatformer",
 			"worldwar22_supreme",
 			"europe1900_global",
+			"moderneuro4_supreme",
 		],
 		"events": [
 		    "medcampaign1",
@@ -558,6 +600,9 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"austroprussianwar",
+			"moderneuro4",
+			"springofnationseuro4",
 		],
 	},
 	"pepper": {
@@ -664,6 +709,7 @@ const NwfUsers = {
 			"euroamerica1590_supreme",
 			"worldwar22_former",
 			"europe1900_super",
+			"austroprussianwar_former",
 		],
 		"events": [
 		    "usa",
@@ -688,6 +734,7 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"austroprussianwar",
 		],
 	},
 	"purple": {
@@ -774,6 +821,7 @@ const NwfUsers = {
 		"gamename": "Manstein",
 		"awards": [
 		    "paraguayanwar_great",
+			"interwareurasia_former",
 		],
 		"events": [
 		    "eurasia5",
@@ -794,6 +842,8 @@ const NwfUsers = {
 			"novuscivilwar",
 			"feudalismac",
 			"eurasiaModern",
+			"interwareurasia",
+			"austroprussianwar",
 		],
 	},
 	"ultron": {
@@ -989,6 +1039,11 @@ const NwfUsers = {
 			"euroamerica1590_former",
 			"worldwar22_former",
 			"europe1900_great",
+			"americancivilwar_greatformer",
+			"interwareurasia_great",
+			"austroprussianwar_global",
+			"moderneuro4_super",
+			"deadhand2_great",
 		],
 		"events": [
 			"better36",
@@ -1003,6 +1058,12 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"americancivilwar",
+			"interwareurasia",
+			"austroprussianwar",
+			"moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
 		],
 	},
 	"seby": {
@@ -1025,9 +1086,15 @@ const NwfUsers = {
 		"gamename": "Pierog",
 		"awards": [
 			"better36_great",
+			"imperatorrome_greatformer",
+			"interwareurasia_global",
+			"springofnationseuro4_great",
 		],
 		"events": [
 			"better36",
+			"imperatorrome",
+			"interwareurasia",
+			"springofnationseuro4",
 		],
 	},
 	"razdan": {
@@ -1079,6 +1146,8 @@ const NwfUsers = {
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"moderneuro4",
+			"springofnationseuro4",
 		],
 		"awards": [
 			"worldww2_global",
@@ -1087,6 +1156,7 @@ const NwfUsers = {
 			"balkans1444_great",
 			"worldwar22_former",
 			"europe1900_former",
+			"moderneuro4_great",
 		],
 	},
 	"greg": {
@@ -1102,6 +1172,10 @@ const NwfUsers = {
 			"world1444_super",
 			"euroamerica1590_super",
 			"europe1900_greatformer",
+			"americancivilwar_supreme",
+			"interwareurasia_greatformer",
+			"austroprussianwar_supreme",
+			"moderneuro4_super",
 		],
 		"events": [
 	        "euro4modern2",
@@ -1117,6 +1191,11 @@ const NwfUsers = {
 			"balkans1444",
 			"europe1900",
 			"eurohlebmodern",
+			"americancivilwar",
+			"interwareurasia",
+			"austroprussianwar",
+			"moderneuro4",
+			"springofnationseuro4",
 		],
 	},
 	"breb": {
@@ -1208,6 +1287,14 @@ const NwfUsers = {
 			"balkans1444_great",
 			"europe1900_former",
 			"worldwar22_super",
+			"imperatorrome_global",
+			"americancivilwar_super",
+			"interwareurasia_super",
+			"austroprussianwar_global",
+			"sweden_greatformer",
+			"moderneuro4_greatformer",
+			"deadhand2_super",
+			"springofnationseuro4_greatformer",
 		],
 		"events": [
 		    "thirdworldrising",
@@ -1215,6 +1302,14 @@ const NwfUsers = {
 			"balkans1444",
 			"europe1900",
 			"worldwar22",
+			"imperatorrome",
+			"americancivilwar",
+			"interwareurasia",
+			"austroprussianwar",
+			"sweden",
+			"moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
 		]
 	},
 	"exi": {
@@ -1231,22 +1326,36 @@ const NwfUsers = {
 			"euroamerica1590",
 		]
 	},
-	"mali": {
-		"id": "mali",
+	"metagross": {
+		"id": "Metagross",
 		"discord": "theuniquegermanball.",
 		"discordid": "1377666909146976276",
-		"gamename": "MaliCH",
+		"gamename": "Metagross",
 		"awards": [
 		    "balkans1444_great",
 			"worldwar22_former",
 			"europe1900_great",
 			"eurohlebmodern_global",
+			"imperatorrome_great",
+			"americancivilwar_great",
+			"austroprussianwar_global",
+			"sweden_former",
+			"moderneuro4_great",
+			"deadhand2_great",
+			"springofnationseuro4_global",
 		],
 		"events": [
 		    "balkans1444",
 			"worldwar22",
 			"europe1900",
 			"eurohlebmodern",
+			"imperatorrome",
+			"americancivilwar",
+			"austroprussianwar",
+			"sweden",
+			"moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
 		]
 	},
 	"leaderpenguin": {
@@ -1256,11 +1365,114 @@ const NwfUsers = {
 		"gamename": "Leader Penguin",
 		"awards": [
 		    "eurohlebmodern_global",
+			"springofnationseuro4_great",
 		],
 		"events": [
 		    "eurohlebmodern",
+			"springofnationseuro4",
 		]
-	}
+	},
+	"ryan215": {
+		"id": "ryan215",
+		"discord": "ryandohaymer_23597",
+		"discordid": "1513921586996973794",
+		"gamename": "ryan215",
+		"awards": [
+		    "americancivilwar_former",
+		],
+		"events": [
+		    "americancivilwar",
+			"austroprussianwar",
+			"deadhand2",
+			"springofnationseuro4",
+		]
+	},
+	"darknesserr": {
+		"id": "darknesserr",
+		"discord": "darknesserr_756",
+		"discordid": "1511626627694465097",
+		"gamename": "darknesserr",
+		"awards": [
+		    "sweden_former",
+		],
+		"events": [
+		    "austroprussianwar",
+			"sweden",
+			"deadhand2",
+		]
+	},
+	"luther": {
+		"id": "luther",
+		"discord": "394037_",
+		"discordid": "1331333263742074900",
+		"gamename": "Luther",
+		"awards": [
+		    "moderneuro4_global,",
+		],
+		"events": [
+		    "moderneuro4",
+		]
+	},
+	"siver": {
+		"id": "siver",
+		"discord": "sivso",
+		"discordid": "668587674361266208",
+		"gamename": "siver",
+		"awards": [
+		    "moderneuro4_global",
+			"deadhand2_great",
+			"springofnationseuro4_great",
+		],
+		"events": [
+		    "moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
+		]
+	},
+	"kaeye": {
+		"id": "kaeye",
+		"discord": "kaeye_49501",
+		"discordid": "1358877526398734409",
+		"gamename": "Kaeye",
+		"awards": [
+		    "moderneuro4_great",
+		],
+		"events": [
+		    "moderneuro4",
+		]
+	},
+	"ashida": {
+		"id": "ashida",
+		"discord": "jke3223",
+		"discordid": "1268588197508550677",
+		"gamename": "Ashida",
+		"awards": [
+		    "moderneuro4_former",
+			"deadhand2_global",
+			"springofnationseuro4_super",
+		],
+		"events": [
+		    "moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
+		]
+	},
+	"alan": {
+		"id": "alan",
+		"discord": "alan_idk_",
+		"discordid": "950564985656995880",
+		"gamename": "Alan",
+		"awards": [
+		    "moderneuro4_former",
+			"deadhand2_greatformer",
+			"springofnationseuro4_global",
+		],
+		"events": [
+		    "moderneuro4",
+			"deadhand2",
+			"springofnationseuro4",
+		]
+	},
 };
 
 const NwfTypes = {
@@ -1733,4 +1945,49 @@ const NwfEvents = {
 		date: '16.08.2026',
 		img: 'imperatorrome.png',
 	},
+	americancivilwar: {
+		name: 'Americas Civil War',
+		date: '23.08.2026',
+		img: 'americancivilwar.png',
+	},
+	interwareurasia: {
+		name: 'Interwar Eurasia',
+		date: '29.08.2026',
+		img: 'interwareurasia.png',
+	},
+	austroprussianwar: {
+		name: 'Austro-Prussian War',
+		date: '30.08.2026',
+		img: 'austroprussianwar.png',
+	},
+	sweden: {
+		name: 'Sweden',
+		date: '06.09.2026',
+		img: 'sweden.png',
+	},
+	moderneuro4: {
+		name: 'Modern Euro4',
+		date: '13.09.2026',
+		img: 'moderneuro4.png',
+	},
+	deadhand2: {
+		name: 'Dead Hand (2)',
+		date: '20.09.2026',
+		img: 'deadhand2.png',
+	},
+	springofnationseuro4: {
+		name: 'Spring of Nations (2)',
+		date: '19.09.2026',
+		img: 'springofnationseuro4.png',
+	},
+	poland: {
+		name: 'Poland',
+		date: '26.09.2026',
+		img: 'poland.png',
+	},
+	eternaleurope1444: {
+		name: '1444 Eternal Europe',
+		date: '27.09.2026',
+		img: 'eternaleurope1444.png',
+	}, 
 }
