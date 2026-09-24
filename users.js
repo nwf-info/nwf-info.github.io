@@ -1282,7 +1282,6 @@ const NwfUsers = {
 		"gamename": "USC",
 		"discordid": "1431788304491216946",
 		"awards": [
-		    "thirdworldrising_cheater",
 			"euroamerica1590_former",
 			"balkans1444_great",
 			"europe1900_former",
